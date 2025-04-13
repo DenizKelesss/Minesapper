@@ -33,8 +33,10 @@ public class Tile : MonoBehaviour
                 TextMesh textMesh = textObj.AddComponent<TextMesh>();
                 textMesh.text = neighboringMines.ToString();
                 textMesh.fontSize = 128;
+                textMesh.fontStyle = FontStyle.Bold;
                 textMesh.characterSize = 0.1f;
                 textMesh.alignment = TextAlignment.Center;
+                textMesh.transform.localScale = new Vector3(2f, 4f, 2f);
                 textMesh.anchor = TextAnchor.MiddleCenter;
                 textMesh.color = Color.blue;
                 textMesh.transform.rotation = Quaternion.Euler(90, 0, 0);
