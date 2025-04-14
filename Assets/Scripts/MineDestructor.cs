@@ -3,12 +3,9 @@ using UnityEngine;
 public class MineDestructor : MonoBehaviour
 {
     [Range(0, 100)]
-    public float destroyChance = 50f;
+    public float destroyChance = 50f;  // Set from LevelManager.
 
     private Collider currentMine;
-
-    public delegate void MinigameStart();
-    public static event MinigameStart OnMinigameStart;
 
     private void Update()
     {
@@ -24,7 +21,7 @@ public class MineDestructor : MonoBehaviour
             else
             {
                 Debug.Log("Failed to destroy the mine! Triggering minigame...");
-                OnMinigameStart?.Invoke();
+                // Trigger your minigame logic here.
             }
         }
     }
