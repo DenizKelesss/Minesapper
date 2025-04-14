@@ -12,8 +12,21 @@ public class SceneTransition : MonoBehaviour
         // If there are no objects with the "Mine" tag left, trigger scene transition
         if (mineObjects.Length == 0)
         {
-            // Load the next scene (or specify a scene name/ID)
-            SceneManager.LoadScene("Level2"); // Replace "NextSceneName" with the actual scene name
+            // Get the current active scene
+            Scene currentScene = SceneManager.GetActiveScene();
+
+            // Load the next scene by index
+            int nextSceneIndex = currentScene.buildIndex + 1;
+
+            // Check if the next scene exists in the build settings
+            if (nextSceneIndex < SceneManager.sceneCountInBuildSettings)
+            {
+                SceneManager.LoadScene(nextSceneIndex);
+            }
+            else
+            {
+                Debug.Log("No more scenes to load!");
+            }
         }
     }
 }
