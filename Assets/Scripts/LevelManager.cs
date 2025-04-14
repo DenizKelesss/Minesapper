@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class LevelManager : MonoBehaviour
 {
@@ -6,7 +7,19 @@ public class LevelManager : MonoBehaviour
 
     public void Start()
     {
-        LoadLevel(1);
+        // Check if the active scene is "Level1"
+        if (SceneManager.GetActiveScene().name == "Level1")
+        {
+            LoadLevel(1);
+        }
+        else if (SceneManager.GetActiveScene().name == "Level2")
+        {
+            LoadLevel(2);
+        }
+        else if (SceneManager.GetActiveScene().name == "Level3")
+        {
+            LoadLevel(2);
+        }
     }
 
     public void LoadLevel(int level)
