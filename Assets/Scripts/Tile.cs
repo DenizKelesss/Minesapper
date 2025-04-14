@@ -90,8 +90,12 @@ public class Tile : MonoBehaviour
     {
         if (isMine)
         {
-            GetComponent<Renderer>().material.color = Color.black;
+            GetComponent<Renderer>().material.color = Color.red;
             gameObject.tag = "Mine";  // So the FPS player can detect them.
+        }
+        else
+        {
+            gameObject.SetActive(false);  // Correct way to deactivate!
         }
     }
 }

@@ -78,6 +78,11 @@ public class GameManager : MonoBehaviour
 
     public void ActivateFirstPersonMode()
     {
+        foreach (Tile tile in tiles)
+        {
+            tile.RevealMineForFPS();
+        }
+
         puzzleCamera.gameObject.SetActive(false);
         firstPersonPlayer.SetActive(true);
     }
@@ -93,13 +98,15 @@ public class GameManager : MonoBehaviour
         Debug.Log("You win!");
         gameOver = true;
 
+        /*
         foreach (Tile tile in tiles)
         {
             if (tile.isMine)
             {
-                tile.RevealMineForFPS();  // New method.
+                tile.RevealMineForFPS();
             }
         }
+        */
 
         ActivateFirstPersonMode();  // New method.
     }
