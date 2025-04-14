@@ -26,12 +26,4 @@ public class FirstPersonPlayer : MonoBehaviour
         transform.Rotate(Vector3.up * mouseX);
     }
 
-    void OnTriggerEnter(Collider other)
-    {
-        if (other.CompareTag("Mine"))
-        {
-            Debug.Log("Approached a mine — start defusing minigame!");
-            // You can implement the minigame trigger here later.
-        }
-    }
 }

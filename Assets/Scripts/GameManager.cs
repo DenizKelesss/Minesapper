@@ -98,15 +98,6 @@ public class GameManager : MonoBehaviour
         Debug.Log("You win!");
         gameOver = true;
 
-        /*
-        foreach (Tile tile in tiles)
-        {
-            if (tile.isMine)
-            {
-                tile.RevealMineForFPS();
-            }
-        }
-        */
 
         ActivateFirstPersonMode();  // New method.
     }

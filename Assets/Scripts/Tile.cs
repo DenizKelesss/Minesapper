@@ -32,7 +32,7 @@ public class Tile : MonoBehaviour
 
                 TextMesh textMesh = textObj.AddComponent<TextMesh>();
                 textMesh.text = neighboringMines.ToString();
-                textMesh.fontSize = 128;
+                textMesh.fontSize = 32;
                 textMesh.fontStyle = FontStyle.Bold;
                 textMesh.characterSize = 0.1f;
                 textMesh.alignment = TextAlignment.Center;
