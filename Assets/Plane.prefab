@@ -17,7 +17,7 @@ GameObject:
   - component: {fileID: 6022652553598226512}
   m_Layer: 0
   m_Name: Plane
-  m_TagString: Untagged
+  m_TagString: Mine
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1278,6 +1278,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6132445bb9bc9274ebb8b0012841d475, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  neighboringMines: 0
   isMine: 0
-  neighborMines: 0
   isRevealed: 0
+  isFlagged: 0

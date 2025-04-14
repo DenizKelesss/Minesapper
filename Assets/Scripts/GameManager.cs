@@ -9,6 +9,8 @@ public class GameManager : MonoBehaviour
     public bool gameOver = false;
     private Tile[,] tiles;
 
+    public GameObject firstPersonPlayer;
+    public Camera puzzleCamera;
 
     public int mineCount = 10;
 
@@ -74,6 +76,12 @@ public class GameManager : MonoBehaviour
         }
     }
 
+    public void ActivateFirstPersonMode()
+    {
+        puzzleCamera.gameObject.SetActive(false);
+        firstPersonPlayer.SetActive(true);
+    }
+
     public void CheckWinCondition()
     {
         foreach (Tile tile in tiles)
@@ -84,6 +92,16 @@ public class GameManager : MonoBehaviour
 
         Debug.Log("You win!");
         gameOver = true;
+
+        foreach (Tile tile in tiles)
+        {
+            if (tile.isMine)
+            {
+                tile.RevealMineForFPS();  // New method.
+            }
+        }
+
+        ActivateFirstPersonMode();  // New method.
     }
 
     void CalculateNumbers()

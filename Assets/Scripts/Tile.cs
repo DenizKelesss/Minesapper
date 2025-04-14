@@ -84,4 +84,14 @@ public class Tile : MonoBehaviour
             Reveal();
         }
     }
+
+
+    public void RevealMineForFPS()
+    {
+        if (isMine)
+        {
+            GetComponent<Renderer>().material.color = Color.black;
+            gameObject.tag = "Mine";  // So the FPS player can detect them.
+        }
+    }
 }
