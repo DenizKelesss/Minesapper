@@ -18,7 +18,7 @@ public class LevelManager : MonoBehaviour
             case 1:
                 gameManager.width = 8;
                 gameManager.height = 8;
-                gameManager.mineCount = 2;
+                gameManager.mineCount = 10;
                 SetMineDestructorChance(60f);  // higher chance in early levels?
                 break;
             case 2:
