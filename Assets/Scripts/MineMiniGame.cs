@@ -143,7 +143,7 @@ public class MineMinigame : MonoBehaviour
         PlayerHealth playerHealth = FindFirstObjectByType<PlayerHealth>();
         if (playerHealth != null)
         {
-            playerHealth.DecreaseHealth(15);  // Decrease by 2 on each fail.
+            playerHealth.DecreaseHealth(3);  // Decrease by 2 on each fail.
         }
     }
 }
