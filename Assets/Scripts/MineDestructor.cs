@@ -1,9 +1,15 @@
+using TMPro;
+using Unity.UI;
 using UnityEngine;
 
 public class MineDestructor : MonoBehaviour
 {
     [Range(0, 100)]
     public float destroyChance = 50f;
+
+    public TextMeshProUGUI statusText;
+    public TextMeshPro detectorStatusText;
+
 
     private Collider currentMine;
     private MineMinigame currentMinigame;
@@ -27,13 +33,16 @@ public class MineDestructor : MonoBehaviour
             float roll = Random.Range(0f, 100f);
             if (roll <= destroyChance)
             {
-                Debug.Log("Mine destroyed successfully!");
+                UpdateStatus("Mine destroyed successfully!");
+                UpdateDetectorStatus("Mine destroyed successfully!");
                 Destroy(currentMine.gameObject);
                 currentMine = null;
             }
             else
             {
-                Debug.Log("Failed to destroy the mine! Triggering minigame...");
+                UpdateStatus("Failed to destroy the mine! Triggering minigame...");
+                UpdateDetectorStatus("Failed to destroy the mine! Triggering minigame...");
+
                 if (currentMinigame != null)
                 {
                     isMinigameActive = true;
@@ -55,7 +64,9 @@ public class MineDestructor : MonoBehaviour
         if (other.CompareTag("Mine"))
         {
             currentMine = other;
-            Debug.Log("Mine in range. Press [E] to attempt destruction.");
+            UpdateStatus("Mine in range. Press [E] to attempt destruction.");
+            UpdateDetectorStatus("Mine in range. Press [E] to attempt destruction");
+
         }
     }
 
@@ -63,7 +74,9 @@ public class MineDestructor : MonoBehaviour
     {
         if (other == currentMine)
         {
-            Debug.Log("Left mine range.");
+            UpdateStatus("Left mine range.");
+            UpdateDetectorStatus("Left mine range");
+
             currentMine = null;
         }
     }
@@ -72,7 +85,8 @@ public class MineDestructor : MonoBehaviour
     {
         if (mine != null)
         {
-            Debug.Log("Minigame success — mine defused!");
+            UpdateStatus("Minigame success — mine defused!");
+            UpdateDetectorStatus("Mine Defused");
             Destroy(mine.gameObject);
             if (currentMine == mine)
             {
@@ -80,5 +94,21 @@ public class MineDestructor : MonoBehaviour
             }
         }
         isMinigameActive = false;  // Unlock input after minigame ends.
+    }
+
+    private void UpdateStatus(string message)
+    {
+        if (statusText != null)
+        {
+            statusText.text = message;
+        }
+    }
+
+    private void UpdateDetectorStatus(string message)
+    {
+        if (detectorStatusText != null)
+        {
+            detectorStatusText.text = message;
+        }
     }
 }
