@@ -1,31 +1,65 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using TMPro;
+using System.Collections;
 
 public class SceneTransition : MonoBehaviour
 {
-    // Update method to constantly check if all "Mine" objects are destroyed
+    public TextMeshProUGUI statusText;         // Assign in Inspector.
+    public TextMeshProUGUI countdownText;      // Assign a second Text UI for countdown.
+
+    private bool isTransitioning = false;
+
     void Update()
     {
-        // Find all objects with the "Mine" tag
+        if (isTransitioning) return;
+
         GameObject[] mineObjects = GameObject.FindGameObjectsWithTag("Mine");
 
-        // If there are no objects with the "Mine" tag left, trigger scene transition
         if (mineObjects.Length == 0)
         {
-            // Get the current active scene
-            Scene currentScene = SceneManager.GetActiveScene();
-
-            // Load the next scene by index
-            int nextSceneIndex = currentScene.buildIndex + 1;
-
-            // Check if the next scene exists in the build settings
-            if (nextSceneIndex < SceneManager.sceneCountInBuildSettings)
+            isTransitioning = true;
+            if (statusText != null)
             {
-                SceneManager.LoadScene(nextSceneIndex);
+                statusText.text = "Level Cleared!";
             }
-            else
+            StartCoroutine(LoadNextSceneWithCountdown(3f));  // 3 seconds countdown.
+        }
+    }
+
+    private IEnumerator LoadNextSceneWithCountdown(float delay)
+    {
+        float remainingTime = delay;
+
+        while (remainingTime > 0)
+        {
+            if (countdownText != null)
             {
-                Debug.Log("No more scenes to load!");
+                countdownText.text = "Next Level In: " + Mathf.CeilToInt(remainingTime).ToString();
+            }
+
+            remainingTime -= Time.deltaTime;
+            yield return null;
+        }
+
+        if (countdownText != null)
+        {
+            countdownText.text = "";  // Clear after countdown.
+        }
+
+        Scene currentScene = SceneManager.GetActiveScene();
+        int nextSceneIndex = currentScene.buildIndex + 1;
+
+        if (nextSceneIndex < SceneManager.sceneCountInBuildSettings)
+        {
+            SceneManager.LoadScene(nextSceneIndex);
+        }
+        else
+        {
+            Debug.Log("No more scenes to load!");
+            if (statusText != null)
+            {
+                statusText.text = "No more scenes to load!";
             }
         }
     }

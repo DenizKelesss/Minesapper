@@ -49,7 +49,11 @@ public class MineDestructor : MonoBehaviour
                     Collider mineToDestroy = currentMine;
                     currentMine = null;
 
-                    currentMinigame.StartMinigame(() => OnMinigameSuccess(mineToDestroy));
+                    currentMinigame.StartMinigame(
+                        () => OnMinigameSuccess(mineToDestroy),
+                        () => OnMinigameFailure(mineToDestroy),
+                        15f // Example: 15 seconds, or fetch from GameManager for future upgrades
+                    );
                 }
                 else
                 {
@@ -57,6 +61,21 @@ public class MineDestructor : MonoBehaviour
                 }
             }
         }
+    }
+
+    private void OnMinigameFailure(Collider mine)
+    {
+        if (mine != null)
+        {
+            UpdateStatus("Mine exploded during the minigame!");
+            UpdateDetectorStatus("Mine exploded during the minigame!");
+            Destroy(mine.gameObject);
+            if (currentMine == mine)
+            {
+                currentMine = null;
+            }
+        }
+        isMinigameActive = false;
     }
 
     private void OnTriggerEnter(Collider other)
@@ -85,13 +104,14 @@ public class MineDestructor : MonoBehaviour
     {
         if (mine != null)
         {
-            UpdateStatus("Minigame success — mine defused!");
+            UpdateStatus("Mine defused!");
             UpdateDetectorStatus("Mine Defused");
             Destroy(mine.gameObject);
             if (currentMine == mine)
             {
                 currentMine = null;
             }
+
         }
         isMinigameActive = false;  // Unlock input after minigame ends.
     }
