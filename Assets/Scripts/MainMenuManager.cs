@@ -13,4 +13,10 @@ public class MainMenuManager : MonoBehaviour
         Application.Quit();
     }
 
+    public void ContinueGame()
+    {
+        // Load the level stored in PlayerPrefs
+        int lastLevel = PlayerPrefs.GetInt("CurrentLevel", 1);
+        SceneManager.LoadScene("Level" + lastLevel);  // Assuming your levels are named Level1, Level2, etc.
+    }
 }

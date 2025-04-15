@@ -18,6 +18,7 @@ public class SceneTransition : MonoBehaviour
 
         if (mineObjects.Length == 0)
         {
+            FindFirstObjectByType<UpgradeManager>().LevelUp();
             isTransitioning = true;
             if (statusText != null)
             {
