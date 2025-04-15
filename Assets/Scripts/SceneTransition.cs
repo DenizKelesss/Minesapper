@@ -23,7 +23,7 @@ public class SceneTransition : MonoBehaviour
             {
                 statusText.text = "Level Cleared!";
             }
-            StartCoroutine(LoadNextSceneWithCountdown(3f));  // 3 seconds countdown.
+            StartCoroutine(LoadNextSceneWithCountdown(5f));  // 3 seconds countdown.
         }
     }
 

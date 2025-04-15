@@ -139,5 +139,11 @@ public class MineMinigame : MonoBehaviour
         minigameUI.SetActive(false);
         ClearWalls();
         onFailure?.Invoke();
+
+        PlayerHealth playerHealth = FindFirstObjectByType<PlayerHealth>();
+        if (playerHealth != null)
+        {
+            playerHealth.DecreaseHealth(15);  // Decrease by 2 on each fail.
+        }
     }
 }
