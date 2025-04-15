@@ -131,6 +131,13 @@ public class MineMinigame : MonoBehaviour
         minigameUI.SetActive(false);
         ClearWalls();
         onSuccess?.Invoke();
+
+        var upgradeManager = FindFirstObjectByType<UpgradeManager>();
+        if (upgradeManager != null)
+        {
+            int xpGained = Random.Range(5, 11);
+            upgradeManager.GainXP(xpGained);
+        }
     }
 
     private void MinigameFailed()
@@ -140,10 +147,13 @@ public class MineMinigame : MonoBehaviour
         ClearWalls();
         onFailure?.Invoke();
 
+        var upgradeManager = FindFirstObjectByType<UpgradeManager>();
+        int damage = upgradeManager != null ? upgradeManager.GetFailDamage() : 3;
+
         PlayerHealth playerHealth = FindFirstObjectByType<PlayerHealth>();
         if (playerHealth != null)
         {
-            playerHealth.DecreaseHealth(3);  // Decrease by 2 on each fail.
+            playerHealth.DecreaseHealth(damage);  // Decrease by 2 on each fail.
         }
     }
 }
