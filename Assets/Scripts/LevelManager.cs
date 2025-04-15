@@ -3,6 +3,7 @@ using UnityEngine.SceneManagement;
 
 public class LevelManager : MonoBehaviour
 {
+    /*
     public GameManager gameManager;
 
     public void Start()
@@ -29,18 +30,24 @@ public class LevelManager : MonoBehaviour
         switch (level)
         {
             case 1:
+                gameManager.width = 6;
+                gameManager.height = 6;
+                gameManager.mineCount = 4;
+                SetMineDestructorChance(60f);  // higher chance in early levels?
+                break;
+            case 2:
                 gameManager.width = 8;
                 gameManager.height = 8;
                 gameManager.mineCount = 10;
                 SetMineDestructorChance(60f);  // higher chance in early levels?
                 break;
-            case 2:
+            case 3:
                 gameManager.width = 12;
                 gameManager.height = 12;
                 gameManager.mineCount = 20;
                 SetMineDestructorChance(40f);
                 break;
-            case 3:
+            case 4:
                 gameManager.width = 16;
                 gameManager.height = 16;
                 gameManager.mineCount = 40;
@@ -65,4 +72,5 @@ public class LevelManager : MonoBehaviour
             destructor.destroyChance = chance;
         }
     }
+    */
 }

@@ -149,13 +149,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tilePrefab: {fileID: 7603975783470854792, guid: 4185cdd7a58136c42a0134df03ea8c5c, type: 3}
-  width: 8
-  height: 8
+  width: 6
+  height: 6
   spacing: 1.1
   gameOver: 1
   firstPersonPlayer: {fileID: 809906066}
   puzzleCamera: {fileID: 330585545}
-  mineCount: 10
+  mineCount: 4
 --- !u!4 &23334853
 Transform:
   m_ObjectHideFlags: 0
