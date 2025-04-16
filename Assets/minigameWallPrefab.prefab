@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 3286063324362288720}
   - component: {fileID: 5643706651311408615}
   - component: {fileID: 5296252084381043067}
+  - component: {fileID: -5013992814977321219}
   m_Layer: 5
   m_Name: minigameWallPrefab
   m_TagString: Untagged
@@ -75,3 +76,18 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &-5013992814977321219
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2976937497765356498}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e83d197399e87d343998a01bd3d76bd1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveDirection: {x: 20, y: 20}
+  moveDistance: 30
+  moveSpeed: 3

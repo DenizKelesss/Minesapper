@@ -99,6 +99,14 @@ public class MineMinigame : MonoBehaviour
                 Random.Range(10f, 50f)
             );
 
+            MiniGameWallMotion mover = wall.GetComponent<MiniGameWallMotion>();
+            if (mover != null)
+            {
+                mover.moveDirection = Random.insideUnitCircle.normalized;
+                mover.moveDistance = Random.Range(20f, 100f);
+                mover.moveSpeed = Random.Range(20f, 60f);
+            }
+
             activeWalls.Add(wall);
         }
     }
