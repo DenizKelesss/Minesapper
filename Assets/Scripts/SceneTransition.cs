@@ -18,7 +18,7 @@ public class SceneTransition : MonoBehaviour
 
         if (mineObjects.Length == 0)
         {
-            FindFirstObjectByType<UpgradeManager>().LevelUp();
+            FindFirstObjectByType<UpgradeManager>().LevelUp(); // Invoke level up method here once a level is cleared (a cleared level invokes scene transition)
             isTransitioning = true;
             if (statusText != null)
             {
