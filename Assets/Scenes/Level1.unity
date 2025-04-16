@@ -3065,7 +3065,7 @@ MonoBehaviour:
   draggableObject: {fileID: 1714990825}
   targetArea: {fileID: 1381837139}
   mazeArea: {fileID: 989863771}
-  wallPrefab: {fileID: 2976937497765356498, guid: 153ad07c33b6104448dcf8aec32a34c2, type: 3}
+  wallPrefab: {fileID: 3583776569232839304, guid: 6bd5cd203c5b5ba4e9763c9f967c2622, type: 3}
   numberOfWalls: 20
   minigameTime: 10
   timerText: {fileID: 2006549661}
@@ -4124,6 +4124,7 @@ MonoBehaviour:
   moveSpeed: 5
   mouseSensitivity: 2
   playerCamera: {fileID: 1628301430}
+  canMove: 1
 --- !u!136 &809906068
 CapsuleCollider:
   m_ObjectHideFlags: 0
