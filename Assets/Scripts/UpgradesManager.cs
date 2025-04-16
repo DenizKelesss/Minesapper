@@ -30,21 +30,42 @@ public class UpgradeManager : MonoBehaviour
 
     public void SaveProgress()
     {
-        PlayerPrefs.SetInt("PlayerXP", playerXP);
-        PlayerPrefs.SetInt("PlayerHealthLevel", playerHealthLevel);
-        PlayerPrefs.SetInt("FailDamageLevel", failDamageLevel);
-        PlayerPrefs.SetInt("DestroyChanceLevel", destroyChanceLevel);
-        PlayerPrefs.SetInt("CurrentLevel", currentLevel);  // Save current level
-        PlayerPrefs.Save();
+        SaveData data = new SaveData
+        {
+            playerXP = playerXP,
+            playerHealthLevel = playerHealthLevel,
+            failDamageLevel = failDamageLevel,
+            destroyChanceLevel = destroyChanceLevel,
+            currentLevel = currentLevel
+        };
+
+        string json = JsonUtility.ToJson(data);
+        System.IO.File.WriteAllText(Application.persistentDataPath + "/savefile.json", json);
     }
 
     public void LoadProgress()
     {
-        playerXP = PlayerPrefs.GetInt("PlayerXP", 0);
-        playerHealthLevel = PlayerPrefs.GetInt("PlayerHealthLevel", 1);
-        failDamageLevel = PlayerPrefs.GetInt("FailDamageLevel", 1);
-        destroyChanceLevel = PlayerPrefs.GetInt("DestroyChanceLevel", 1);
-        currentLevel = PlayerPrefs.GetInt("CurrentLevel", 1);  // Load current level
+        string path = Application.persistentDataPath + "/savefile.json";
+
+        if (System.IO.File.Exists(path))
+        {
+            string json = System.IO.File.ReadAllText(path);
+            SaveData data = JsonUtility.FromJson<SaveData>(json);
+
+            playerXP = data.playerXP;
+            playerHealthLevel = data.playerHealthLevel;
+            failDamageLevel = data.failDamageLevel;
+            destroyChanceLevel = data.destroyChanceLevel;
+            currentLevel = data.currentLevel;
+        }
+        else
+        {
+            playerXP = 0;
+            playerHealthLevel = 1;
+            failDamageLevel = 1;
+            destroyChanceLevel = 1;
+            currentLevel = 1;
+        }
     }
 
     public void GainXP(int amount)
@@ -105,12 +126,11 @@ public class UpgradeManager : MonoBehaviour
 
     public void ResetProgress()
     {
-        PlayerPrefs.DeleteKey("PlayerXP");
-        PlayerPrefs.DeleteKey("PlayerHealthLevel");
-        PlayerPrefs.DeleteKey("FailDamageLevel");
-        PlayerPrefs.DeleteKey("DestroyChanceLevel");
-        PlayerPrefs.DeleteKey("CurrentLevel");  // Also reset the current level
-        PlayerPrefs.Save();
+        string path = Application.persistentDataPath + "/savefile.json";
+        if (System.IO.File.Exists(path))
+        {
+            System.IO.File.Delete(path);
+        }
     }
 
     private void ApplyUpgrades()

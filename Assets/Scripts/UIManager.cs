@@ -10,7 +10,7 @@ public class UIManager : MonoBehaviour
 
     public void OpenMainMenu()
     {
-       SceneManager.LoadScene("Main Menu");
-       FindFirstObjectByType<UpgradeManager>().SaveProgress();
+        FindFirstObjectByType<UpgradeManager>().SaveProgress();
+        SceneManager.LoadScene("Main Menu");
     }
 }

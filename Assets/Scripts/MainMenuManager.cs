@@ -15,8 +15,16 @@ public class MainMenuManager : MonoBehaviour
 
     public void ContinueGame()
     {
-        // Load the level stored in PlayerPrefs
-        int lastLevel = PlayerPrefs.GetInt("CurrentLevel", 1);
-        SceneManager.LoadScene("Level" + lastLevel);  // Assuming your levels are named Level1, Level2, etc.
+        string path = Application.persistentDataPath + "/savefile.json";
+
+        int lastLevel = 1; // Default level
+        if (System.IO.File.Exists(path))
+        {
+            string json = System.IO.File.ReadAllText(path);
+            SaveData data = JsonUtility.FromJson<SaveData>(json);
+            lastLevel = data.currentLevel;
+        }
+
+        SceneManager.LoadScene("Level" + lastLevel);
     }
 }
