@@ -7,8 +7,12 @@ public class FirstPersonPlayer : MonoBehaviour
     public Transform playerCamera;
     private float rotationX = 0f;
 
+    public bool canMove = true;  //Add this flag!
+
     void Update()
     {
+        if (!canMove) return;  //Disable movement when this is false!
+
         // Movement
         float moveX = Input.GetAxis("Horizontal") * moveSpeed * Time.deltaTime;
         float moveZ = Input.GetAxis("Vertical") * moveSpeed * Time.deltaTime;
@@ -25,5 +29,4 @@ public class FirstPersonPlayer : MonoBehaviour
         playerCamera.localRotation = Quaternion.Euler(rotationX, 0f, 0f);
         transform.Rotate(Vector3.up * mouseX);
     }
-
 }

@@ -20,8 +20,17 @@ public class MineMinigame : MonoBehaviour
     private float timeRemaining;
     private List<GameObject> activeWalls = new List<GameObject>();
 
+    private FirstPersonPlayer player;
+
+
     public void StartMinigame(System.Action successCallback, System.Action failureCallback, float customTime = -1f)
     {
+        player = FindFirstObjectByType<FirstPersonPlayer>();
+        if (player != null)
+        {
+            player.canMove = false;
+        }
+
         onSuccess = successCallback;
         onFailure = failureCallback;
         minigameUI.SetActive(true);
@@ -140,6 +149,11 @@ public class MineMinigame : MonoBehaviour
         ClearWalls();
         onSuccess?.Invoke();
 
+        if (player != null)
+        {
+            player.canMove = true;
+        }
+
         var upgradeManager = FindFirstObjectByType<UpgradeManager>();
         if (upgradeManager != null)
         {
@@ -154,6 +168,11 @@ public class MineMinigame : MonoBehaviour
         minigameUI.SetActive(false);
         ClearWalls();
         onFailure?.Invoke();
+
+        if (player != null)
+        {
+            player.canMove = true;
+        }
 
         var upgradeManager = FindFirstObjectByType<UpgradeManager>();
         int damage = upgradeManager != null ? upgradeManager.GetFailDamage() : 3;
