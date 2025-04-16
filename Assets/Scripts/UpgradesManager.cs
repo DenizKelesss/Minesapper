@@ -11,7 +11,11 @@ public class UpgradeManager : MonoBehaviour
     public int currentLevel = 1;  // Add this to track the current level
 
     public TextMeshProUGUI playerXPText;
-    public TextMeshProUGUI playerLevelText;
+    public TextMeshProUGUI playerHealthLevelText;
+    public TextMeshProUGUI playerResistanceLevelText;
+    public TextMeshProUGUI playerMineDestroyChanceLevelText;
+
+
     public TextMeshProUGUI currentLevelText;  // Display current level in the UI
 
     public int xpPerUpgrade = 10;
@@ -82,8 +86,14 @@ public class UpgradeManager : MonoBehaviour
         if (playerXPText != null)
             playerXPText.text = "XP: " + playerXP;
 
-        if (playerLevelText != null)
-            playerLevelText.text = "Health Level: " + playerHealthLevel;
+        if (playerHealthLevelText != null)
+            playerHealthLevelText.text = "Health Level: " + playerHealthLevel;
+
+        if (playerResistanceLevelText != null)
+            playerResistanceLevelText.text = "Damage Resistance Level: " + failDamageLevel;
+
+        if (playerMineDestroyChanceLevelText != null)
+            playerMineDestroyChanceLevelText.text = "Damage Resistance Level: " + destroyChanceLevel;
 
         if (currentLevelText != null)
             currentLevelText.text = "Level: " + currentLevel;  // Show the current level in the UI
