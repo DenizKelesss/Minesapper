@@ -3,6 +3,7 @@ using UnityEngine.UI;
 using TMPro;
 using System.Collections.Generic;
 
+
 public class MineMinigame : MonoBehaviour
 {
     public GameObject minigameUI;
