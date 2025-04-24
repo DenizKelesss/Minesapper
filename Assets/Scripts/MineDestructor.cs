@@ -1,31 +1,27 @@
-using TMPro;
+// Assets/Scripts/MineDestructor.cs
 using UnityEngine;
+using TMPro;
 
 public class MineDestructor : MonoBehaviour
 {
-    [Range(0, 100)]
-    public float destroyChance = 50f;
-
-    public TextMeshProUGUI statusText;
-    public TextMeshPro detectorStatusText;
-
+    [Range(0, 100)] public float destroyChance = 50f;
+    public TextMeshProUGUI statusText, detectorStatusText;
 
     private Collider currentMine;
-    private MineMinigame currentMinigame;
     private bool isMinigameActive = false;
+
+    private MinigameManager mmManager;
 
     private void Start()
     {
-        currentMinigame = FindFirstObjectByType<MineMinigame>();
-        if (currentMinigame == null)
-        {
-            Debug.LogError("MineMinigame is missing from the scene! Please add it.");
-        }
+        mmManager = FindFirstObjectByType<MinigameManager>();
+        if (mmManager == null)
+            Debug.LogError("MineDestructor: No MinigameManager found in scene!");
     }
 
     private void Update()
     {
-        if (isMinigameActive) return;  // Block input while minigame is active.
+        if (isMinigameActive) return;
 
         if (currentMine != null && Input.GetKeyDown(KeyCode.E))
         {
@@ -33,48 +29,26 @@ public class MineDestructor : MonoBehaviour
             if (roll <= destroyChance)
             {
                 UpdateStatus("Mine destroyed successfully!");
-                UpdateDetectorStatus("Mine destroyed successfully!");
                 Destroy(currentMine.gameObject);
                 currentMine = null;
             }
             else
             {
-                UpdateStatus("Failed to destroy the mine! Triggering minigame...");
-                UpdateDetectorStatus("Failed to destroy the mine! Triggering minigame...");
-
-                if (currentMinigame != null)
+                UpdateStatus("Failed! Launching minigame...");
+                if (mmManager != null)
                 {
                     isMinigameActive = true;
-                    Collider mineToDestroy = currentMine;
+                    var mineRef = currentMine;
                     currentMine = null;
 
-                    currentMinigame.StartMinigame(
-                        () => OnMinigameSuccess(mineToDestroy),
-                        () => OnMinigameFailure(mineToDestroy),
-                        15f // Example: 15 seconds, or fetch from GameManager for future upgrades
+                    mmManager.LaunchRandomMinigame(
+                        () => OnMinigameSuccess(mineRef),
+                        () => OnMinigameFailure(mineRef),
+                        15f
                     );
                 }
-                else
-                {
-                    Debug.LogWarning("No MineMinigame object found in the scene!");
-                }
             }
         }
-    }
-
-    private void OnMinigameFailure(Collider mine)
-    {
-        if (mine != null)
-        {
-            UpdateStatus("Mine exploded during the minigame!");
-            UpdateDetectorStatus("Mine exploded during the minigame!");
-            Destroy(mine.gameObject);
-            if (currentMine == mine)
-            {
-                currentMine = null;
-            }
-        }
-        isMinigameActive = false;
     }
 
     private void OnTriggerEnter(Collider other)
@@ -83,8 +57,6 @@ public class MineDestructor : MonoBehaviour
         {
             currentMine = other;
             UpdateStatus("Mine in range. Press [E] to attempt destruction.");
-            UpdateDetectorStatus("Mine in range. Press [E] to attempt destruction");
-
         }
     }
 
@@ -93,41 +65,27 @@ public class MineDestructor : MonoBehaviour
         if (other == currentMine)
         {
             UpdateStatus("Left mine range.");
-            UpdateDetectorStatus("Left mine range");
-
             currentMine = null;
         }
     }
 
     private void OnMinigameSuccess(Collider mine)
     {
-        if (mine != null)
-        {
-            UpdateStatus("Mine defused!");
-            UpdateDetectorStatus("Mine Defused");
-            Destroy(mine.gameObject);
-            if (currentMine == mine)
-            {
-                currentMine = null;
-            }
-
-        }
-        isMinigameActive = false;  // Unlock input after minigame ends.
+        UpdateStatus("Mine defused!");
+        Destroy(mine.gameObject);
+        isMinigameActive = false;
     }
 
-    private void UpdateStatus(string message)
+    private void OnMinigameFailure(Collider mine)
     {
-        if (statusText != null)
-        {
-            statusText.text = message;
-        }
+        UpdateStatus("Mine exploded during minigame!");
+        Destroy(mine.gameObject);
+        isMinigameActive = false;
     }
 
-    private void UpdateDetectorStatus(string message)
+    private void UpdateStatus(string msg)
     {
-        if (detectorStatusText != null)
-        {
-            detectorStatusText.text = message;
-        }
+        if (statusText != null) statusText.text = msg;
+        if (detectorStatusText != null) detectorStatusText.text = msg;
     }
 }

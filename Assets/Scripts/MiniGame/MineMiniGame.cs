@@ -1,10 +1,13 @@
+// Assets/Scripts/MineMinigame.cs
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using System;
 using System.Collections.Generic;
+using Random = UnityEngine.Random;
 
+public class MineMiniGame : MonoBehaviour, IMinigame
 
-public class MineMinigame : MonoBehaviour
 {
     public GameObject minigameUI;
     public RectTransform draggableObject;
@@ -12,33 +15,26 @@ public class MineMinigame : MonoBehaviour
     public RectTransform mazeArea;
     public GameObject wallPrefab;
     public int numberOfWalls = 5;
-    public float minigameTime = 10f;  // Default time
+    public float minigameTime = 10f;
     public TextMeshProUGUI timerText;
 
-    private System.Action onSuccess;
-    private System.Action onFailure;
+    private Action onSuccess;
+    private Action onFailure;
     private bool isDragging = false;
     private float timeRemaining;
     private List<GameObject> activeWalls = new List<GameObject>();
-
     private FirstPersonPlayer player;
 
-
-    public void StartMinigame(System.Action successCallback, System.Action failureCallback, float customTime = -1f)
+    public void StartMinigame(Action successCallback, Action failureCallback, float customTime = -1f)
     {
         player = FindFirstObjectByType<FirstPersonPlayer>();
-        if (player != null)
-        {
-            player.canMove = false;
-        }
+        if (player != null) player.canMove = false;
 
         onSuccess = successCallback;
         onFailure = failureCallback;
         minigameUI.SetActive(true);
         draggableObject.anchoredPosition = Vector2.zero;
-
         timeRemaining = (customTime > 0) ? customTime : minigameTime;
-
         GenerateMazeWalls();
     }
 
@@ -46,70 +42,52 @@ public class MineMinigame : MonoBehaviour
     {
         if (!minigameUI.activeSelf) return;
 
-        // Timer logic
+        // Timer
         timeRemaining -= Time.deltaTime;
-        if (timerText != null)
-        {
-            timerText.text = "Time: " + Mathf.Ceil(timeRemaining).ToString();
-        }
-        if (timeRemaining <= 0)
-        {
-            MinigameFailed();
-            return;
-        }
+        if (timerText != null) timerText.text = "Time: " + Mathf.Ceil(timeRemaining);
+        if (timeRemaining <= 0) { MinigameFailed(); return; }
 
-        // Dragging logic
-        if (Input.GetMouseButtonDown(0) && RectTransformUtility.RectangleContainsScreenPoint(draggableObject, Input.mousePosition))
-        {
+        // Drag start/stop
+        if (Input.GetMouseButtonDown(0) &&
+            RectTransformUtility.RectangleContainsScreenPoint(draggableObject, Input.mousePosition))
             isDragging = true;
-        }
 
         if (Input.GetMouseButtonUp(0))
         {
             isDragging = false;
             if (RectTransformUtility.RectangleContainsScreenPoint(targetArea, Input.mousePosition))
-            {
                 MinigameSuccess();
-            }
         }
 
+        // Drag movement & collision
         if (isDragging)
         {
             RectTransformUtility.ScreenPointToLocalPointInRectangle(
                 minigameUI.GetComponent<RectTransform>(),
-                Input.mousePosition,
-                null,
-                out Vector2 localPoint
-            );
+                Input.mousePosition, null, out Vector2 localPoint);
             draggableObject.anchoredPosition = localPoint;
 
-            if (CheckWallCollision())
-            {
-                MinigameFailed();
-            }
+            if (CheckWallCollision()) MinigameFailed();
         }
     }
 
     private void GenerateMazeWalls()
     {
         ClearWalls();
-
         for (int i = 0; i < numberOfWalls; i++)
         {
             GameObject wall = Instantiate(wallPrefab, mazeArea);
-            RectTransform wallRect = wall.GetComponent<RectTransform>();
-
-            wallRect.anchoredPosition = new Vector2(
+            RectTransform wr = wall.GetComponent<RectTransform>();
+            wr.anchoredPosition = new Vector2(
                 Random.Range(-mazeArea.rect.width / 2 + 50, mazeArea.rect.width / 2 - 50),
                 Random.Range(-mazeArea.rect.height / 2 + 50, mazeArea.rect.height / 2 - 50)
             );
-
-            wallRect.sizeDelta = new Vector2(
+            wr.sizeDelta = new Vector2(
                 Random.Range(50f, 150f),
                 Random.Range(10f, 50f)
             );
 
-            MiniGameWallMotion mover = wall.GetComponent<MiniGameWallMotion>();
+            var mover = wall.GetComponent<MiniGameWallMotion>();
             if (mover != null)
             {
                 mover.moveDirection = Random.insideUnitCircle.normalized;
@@ -123,65 +101,43 @@ public class MineMinigame : MonoBehaviour
 
     private bool CheckWallCollision()
     {
-        foreach (GameObject wall in activeWalls)
+        foreach (var wall in activeWalls)
         {
-            RectTransform wallRect = wall.GetComponent<RectTransform>();
-            if (RectTransformUtility.RectangleContainsScreenPoint(wallRect, Input.mousePosition))
-            {
+            var wr = wall.GetComponent<RectTransform>();
+            if (RectTransformUtility.RectangleContainsScreenPoint(wr, Input.mousePosition))
                 return true;
-            }
         }
         return false;
     }
 
     private void ClearWalls()
     {
-        foreach (var wall in activeWalls)
-        {
-            Destroy(wall);
-        }
+        foreach (var w in activeWalls) Destroy(w);
         activeWalls.Clear();
     }
 
     private void MinigameSuccess()
     {
-        Debug.Log("Minigame Success!");
-        minigameUI.SetActive(false);
-        ClearWalls();
+        EndMinigame();
         onSuccess?.Invoke();
-
-        if (player != null)
-        {
-            player.canMove = true;
-        }
-
-        var upgradeManager = FindFirstObjectByType<UpgradeManager>();
-        if (upgradeManager != null)
-        {
-            int xpGained = Random.Range(5, 11);
-            upgradeManager.GainXP(xpGained);
-        }
+        var um = FindFirstObjectByType<UpgradeManager>();
+        if (um != null) um.GainXP(UnityEngine.Random.Range(5, 11));
     }
 
     private void MinigameFailed()
     {
-        Debug.Log("Minigame Failed! Mine will still be destroyed.");
+        EndMinigame();
+        onFailure?.Invoke();
+        var um = FindFirstObjectByType<UpgradeManager>();
+        int dmg = (um != null) ? um.GetFailDamage() : 3;
+        var ph = FindFirstObjectByType<PlayerHealth>();
+        if (ph != null) ph.DecreaseHealth(dmg);
+    }
+
+    private void EndMinigame()
+    {
         minigameUI.SetActive(false);
         ClearWalls();
-        onFailure?.Invoke();
-
-        if (player != null)
-        {
-            player.canMove = true;
-        }
-
-        var upgradeManager = FindFirstObjectByType<UpgradeManager>();
-        int damage = upgradeManager != null ? upgradeManager.GetFailDamage() : 3;
-
-        PlayerHealth playerHealth = FindFirstObjectByType<PlayerHealth>();
-        if (playerHealth != null)
-        {
-            playerHealth.DecreaseHealth(damage);  // Decrease by damage amount on each fail.
-        }
+        if (player != null) player.canMove = true;
     }
 }
