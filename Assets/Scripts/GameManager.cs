@@ -29,7 +29,6 @@ public class GameManager : MonoBehaviour
     public void GenerateField()
     {
         ClearField();  // <<< To clean previous field before beginning a new one.
-
         tiles = new Tile[width, height];
 
         for (int x = 0; x < width; x++)
@@ -81,7 +80,10 @@ public class GameManager : MonoBehaviour
     {
         foreach (Tile tile in tiles)
         {
-            tile.RevealMineForFPS();
+            if (tile != null)
+            {
+                tile.RevealMineForFPS();
+            }
         }
 
         puzzleCamera.gameObject.SetActive(false);
