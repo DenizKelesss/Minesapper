@@ -5,6 +5,7 @@ using System.Collections;
 public class ComicIntro : MonoBehaviour
 {
     public GameObject comicPanel;
+    public GameObject comicPagesObject;
     public Image[] comicPages;
     public float[] pageDurations;
     public AudioClip[] voiceovers;
@@ -64,7 +65,9 @@ public class ComicIntro : MonoBehaviour
     {
         if (autoAdvanceCoroutine != null) StopCoroutine(autoAdvanceCoroutine);
         audioSource.Stop();
-        comicPanel.SetActive(false);
+        Destroy(comicPanel);
+        Destroy(comicPagesObject);
+
         // Trigger gameplay start here
     }
 }
