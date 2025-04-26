@@ -1167,8 +1167,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f66eedfca6740ad4991b73070cbd20a0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mainMenuMusic: {fileID: 8300000, guid: 32f03c6737dadde4fb5b95a328394813, type: 3}
-  inGameMusic: {fileID: 8300000, guid: 21a2f8ba77939574687711292b35e438, type: 3}
+  mainMenuMusic: {fileID: 8300000, guid: 03f75f96f7396b841aa7d25a16066e12, type: 3}
+  inGameMusic: {fileID: 8300000, guid: 60a8d223c5e7a894891f97ad08c9853b, type: 3}
 --- !u!4 &1328436320
 Transform:
   m_ObjectHideFlags: 0
