@@ -6298,7 +6298,7 @@ GameObject:
   - component: {fileID: 1161660739}
   - component: {fileID: 1161660738}
   m_Layer: 5
-  m_Name: ReactionMiniGame
+  m_Name: ReactionMiniGamePanel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8318,7 +8318,7 @@ GameObject:
   - component: {fileID: 1539315295}
   - component: {fileID: 1539315294}
   m_Layer: 5
-  m_Name: MineMiniGame
+  m_Name: MineMiniGamePanel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -66769,7 +66769,7 @@ GameObject:
   - component: {fileID: 5837202935636665678}
   - component: {fileID: 3911429434974095744}
   m_Layer: 5
-  m_Name: reactoinbutton
+  m_Name: reactionbutton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
