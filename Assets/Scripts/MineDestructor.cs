@@ -1,4 +1,3 @@
-// Assets/Scripts/MineDestructor.cs
 using UnityEngine;
 using TMPro;
 

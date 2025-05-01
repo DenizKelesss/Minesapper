@@ -1,6 +1,8 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
+// NO LONGER USED - KEPT JUST IN CASE. IN CASE WHAT? DUNNO.
+
 public class LevelManager : MonoBehaviour
 {
     /*

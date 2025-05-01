@@ -5,8 +5,8 @@ using System.Collections;
 
 public class SceneTransition : MonoBehaviour
 {
-    public TextMeshProUGUI statusText;         // Assign in Inspector.
-    public TextMeshProUGUI countdownText;      // Assign a second Text UI for countdown.
+    public TextMeshProUGUI statusText;
+    public TextMeshProUGUI countdownText;
 
     private bool isTransitioning = false;
 
@@ -45,7 +45,7 @@ public class SceneTransition : MonoBehaviour
 
         if (countdownText != null)
         {
-            countdownText.text = "";  // Clear after countdown.
+            countdownText.text = "";
         }
 
         Scene currentScene = SceneManager.GetActiveScene();

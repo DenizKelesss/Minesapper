@@ -1,4 +1,3 @@
-// Assets/Scripts/QuickReactionMinigame.cs
 using System;
 using System.Collections;
 using UnityEngine;
@@ -46,7 +45,7 @@ public class QuickReactionMiniGame : MonoBehaviour, IMinigame
         canReact = true;
         reactionStartTime = Time.time;
 
-        // Fail automatically after 1.5 seconds if no click
+        // Minigame is failed automatically after 1.5 seconds if no click at all.
         yield return new WaitForSeconds(1.5f);
         if (!hasReacted)
         {
@@ -67,7 +66,7 @@ public class QuickReactionMiniGame : MonoBehaviour, IMinigame
         {
             hasReacted = true;
             float reactionTime = Time.time - reactionStartTime;
-            if (reactionTime <= 1f) // success if clicked within 1 second
+            if (reactionTime <= 1f) // success IF clicked within 1 second.
             {
                 instructionText.text = $"Success! ({reactionTime:F2}s)";
                 Success();

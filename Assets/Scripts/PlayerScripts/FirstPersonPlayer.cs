@@ -7,11 +7,11 @@ public class FirstPersonPlayer : MonoBehaviour
     public Transform playerCamera;
     private float rotationX = 0f;
 
-    public bool canMove = true;  //Add this flag!
+    public bool canMove = true;
 
     void Update()
     {
-        if (!canMove) return;  //Disable movement when this is false!
+        if (!canMove) return;  // to make sure player won't be able to move during a minigame
 
         // Movement
         float moveX = Input.GetAxis("Horizontal") * moveSpeed * Time.deltaTime;

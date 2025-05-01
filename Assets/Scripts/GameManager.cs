@@ -28,7 +28,7 @@ public class GameManager : MonoBehaviour
 
     public void GenerateField()
     {
-        ClearField();  // <<< To clean previous field before beginning a new one.
+        ClearField();  // <<< To clean the previous minefield before getting a new one.
         tiles = new Tile[width, height];
 
         for (int x = 0; x < width; x++)
@@ -95,14 +95,14 @@ public class GameManager : MonoBehaviour
         foreach (Tile tile in tiles)
         {
             if (!tile.isMine && !tile.isRevealed)
-                return;  // Still playing.
+                return;
         }
 
         Debug.Log("You win!");
         gameOver = true;
 
 
-        ActivateFirstPersonMode();  // New method.
+        ActivateFirstPersonMode();
     }
 
     void CalculateNumbers()

@@ -8,7 +8,7 @@ public class UpgradeManager : MonoBehaviour
     public int playerHealthLevel = 1;
     public int failDamageLevel = 1;
     public int destroyChanceLevel = 1;
-    public int currentLevel = 1;  // Add this to track the current level
+    public int currentLevel = 1;
 
     public TextMeshProUGUI playerXPText;
     public TextMeshProUGUI playerHealthLevelText;
@@ -16,7 +16,7 @@ public class UpgradeManager : MonoBehaviour
     public TextMeshProUGUI playerMineDestroyChanceLevelText;
 
 
-    public TextMeshProUGUI currentLevelText;  // Display current level in the UI
+    public TextMeshProUGUI currentLevelText;
 
     public int xpPerUpgrade = 10;
 
@@ -28,7 +28,7 @@ public class UpgradeManager : MonoBehaviour
 
     private void Start()
     {
-        LoadProgress();  // Load all progress data, including level
+        LoadProgress();  // Load all progress data, including level data, update data (faildamageleve, healthlevel, destroy chance leve) and playerXP data - health might be needed too?
         ApplyUpgrades();
         UpdateUI();
     }

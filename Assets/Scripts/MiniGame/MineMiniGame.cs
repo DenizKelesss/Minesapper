@@ -1,4 +1,3 @@
-// Assets/Scripts/MineMinigame.cs
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
@@ -59,7 +58,7 @@ public class MineMiniGame : MonoBehaviour, IMinigame
                 MinigameSuccess();
         }
 
-        // Drag movement & collision
+        // Drag movement & collision detection
         if (isDragging)
         {
             RectTransformUtility.ScreenPointToLocalPointInRectangle(

@@ -6,7 +6,7 @@ public class PlayerHealth : MonoBehaviour
     public int maxHealth = 10;
     private int currentHealth;
 
-    public Slider healthBar;  // Assign this in the Inspector.
+    public Slider healthBar;
     private UIManager uiManager;
 
     private void Start()

@@ -43,7 +43,7 @@ public class MainMenuManager : MonoBehaviour
     {
         string path = Application.persistentDataPath + "/savefile.json";
 
-        int lastLevel = 1; // Default level
+        int lastLevel = 1; //default
         if (System.IO.File.Exists(path))
         {
             string json = System.IO.File.ReadAllText(path);
@@ -52,8 +52,7 @@ public class MainMenuManager : MonoBehaviour
         }
         else
         {
-            Debug.Log("No saved game found.");
-            // You could show a UI popup here.
+            Debug.Log("No saved game found."); // could be nice to add a little ui for this, later.
         }
 
         SceneManager.LoadScene("Level" + lastLevel);

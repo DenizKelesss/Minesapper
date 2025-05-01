@@ -10,7 +10,7 @@ public class NextLevelTrigger : MonoBehaviour
 
         if (other.CompareTag("Player") && nextSceneIndex < SceneManager.sceneCountInBuildSettings)
         {
-            FindFirstObjectByType<UpgradeManager>().LevelUp(); // <-- NEW! Save level up
+            FindFirstObjectByType<UpgradeManager>().LevelUp(); // needed to save this type of level too, it should be saved. I think.
             SceneManager.LoadScene(nextSceneIndex);
         }
     }

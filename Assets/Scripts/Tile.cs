@@ -28,7 +28,7 @@ public class Tile : MonoBehaviour
             {
                 GameObject textObj = new GameObject("MineCount");
                 textObj.transform.SetParent(this.transform);
-                textObj.transform.localPosition = new Vector3(0, 0f, 0);  // Slightly above tile.
+                textObj.transform.localPosition = new Vector3(0, 0f, 0);
 
                 TextMesh textMesh = textObj.AddComponent<TextMesh>();
                 textMesh.text = neighboringMines.ToString();
@@ -43,7 +43,7 @@ public class Tile : MonoBehaviour
             }
             else
             {
-                // If no neighboring mines, auto-reveal surrounding tiles!
+                // The minesweeper logic reveals nearby tiles if there aren't any mines nearby
                 RevealNeighbors();
             }
         }
@@ -70,7 +70,7 @@ public class Tile : MonoBehaviour
 
     void OnMouseOver()
     {
-        if (Input.GetMouseButtonDown(1) && !isRevealed)  // Right-click to flag.
+        if (Input.GetMouseButtonDown(1) && !isRevealed)
         {
             isFlagged = !isFlagged;
             GetComponent<Renderer>().material.color = isFlagged ? Color.yellow : Color.gray;
@@ -79,7 +79,7 @@ public class Tile : MonoBehaviour
 
     private void OnMouseDown()
     {
-        if (!isRevealed && !isFlagged)  // Don't allow left-click on flagged tiles.
+        if (!isRevealed && !isFlagged)  // left-click on flagged tiles shouldn't change it.
         {
             Reveal();
         }
@@ -90,12 +90,12 @@ public class Tile : MonoBehaviour
     {
         if (isMine)
         {
-            GetComponent<Renderer>().material.color = Color.red;
+            GetComponent<Renderer>().material.color = Color.red; // NEED TO CHANGE - revealed mines should turn into actual mines (3D mineobjects) 
             gameObject.tag = "Mine";  // So the FPS player can detect them.
         }
         else
         {
-            gameObject.SetActive(false);  // Correct way to deactivate!
+            gameObject.SetActive(false);
         }
     }
 }

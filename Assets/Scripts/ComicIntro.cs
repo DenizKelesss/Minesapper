@@ -68,6 +68,6 @@ public class ComicIntro : MonoBehaviour
         Destroy(comicPanel);
         Destroy(comicPagesObject);
 
-        // Trigger gameplay start here
+        //leads to the scene, the same scene
     }
 }
