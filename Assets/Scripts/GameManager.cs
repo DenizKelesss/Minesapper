@@ -11,6 +11,8 @@ public class GameManager : MonoBehaviour
     private Tile[,] tiles;
 
     public GameObject firstPersonPlayer;
+    public GameObject mineTileFP;
+
     public Camera puzzleCamera;
 
     public int mineCount = 10;
@@ -24,6 +26,8 @@ public class GameManager : MonoBehaviour
     {
         gameOver = true;
         Debug.Log("Boom! Game Over.");
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        //invoke restart method
     }
 
     public void GenerateField()
@@ -38,6 +42,7 @@ public class GameManager : MonoBehaviour
                 Vector3 position = new Vector3(x * spacing, 0, y * spacing);
                 GameObject tileObject = Instantiate(tilePrefab, position, Quaternion.identity);
                 Tile tile = tileObject.GetComponent<Tile>();
+                tile.mineTileFP = this.mineTileFP;
                 tiles[x, y] = tile;
             }
         }

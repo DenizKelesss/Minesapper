@@ -7,6 +7,8 @@ public class Tile : MonoBehaviour
     public bool isRevealed = false;
     public bool isFlagged = false;
 
+    public GameObject mineTileFP;
+
     public void Reveal()
     {
         if (isFlagged || isRevealed) return;  // Don't reveal flagged or already revealed tiles.
@@ -90,12 +92,21 @@ public class Tile : MonoBehaviour
     {
         if (isMine)
         {
-            GetComponent<Renderer>().material.color = Color.red; // NEED TO CHANGE - revealed mines should turn into actual mines (3D mineobjects) 
-            gameObject.tag = "Mine";  // So the FPS player can detect them.
+            if (mineTileFP != null)
+            {
+                Instantiate(mineTileFP, transform.position, Quaternion.identity);
+                gameObject.tag = "Mine";
+            }
+            else
+            {
+                Debug.LogWarning("mineTileFP not assigned on tile: " + gameObject.name);
+            }
+
+            Destroy(gameObject); // or gameObject.SetActive(false);
         }
         else
         {
-            gameObject.SetActive(false);
+            Destroy(gameObject);
         }
     }
 }
