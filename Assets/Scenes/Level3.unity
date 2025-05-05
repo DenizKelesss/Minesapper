@@ -154,6 +154,7 @@ MonoBehaviour:
   spacing: 1.1
   gameOver: 1
   firstPersonPlayer: {fileID: 809906066}
+  mineTileFP: {fileID: 6337836135257089676, guid: af98a50f94c25d34f8d0fe93b135a36c, type: 3}
   puzzleCamera: {fileID: 330585545}
   mineCount: 4
 --- !u!4 &23334853

@@ -4,7 +4,8 @@ using TMPro;
 public class MineDestructor : MonoBehaviour
 {
     [Range(0, 100)] public float destroyChance = 50f;
-    public TextMeshProUGUI statusText, detectorStatusText;
+    public TextMeshProUGUI statusText;
+    public TextMeshPro detectorStatusText;
 
     private Collider currentMine;
     private bool isMinigameActive = false;
