@@ -7512,7 +7512,7 @@ GameObject:
   - component: {fileID: 1434695347}
   - component: {fileID: 1434695346}
   m_Layer: 0
-  m_Name: Text (TMP)
+  m_Name: detectorStatusText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9611,7 +9611,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   destroyChance: 50
   statusText: {fileID: 257999230}
-  detectorStatusText: {fileID: 0}
+  detectorStatusText: {fileID: 1434695346}
 --- !u!135 &1872519067
 SphereCollider:
   m_ObjectHideFlags: 0
