@@ -25,8 +25,6 @@ public class WireCutterMinigame : MonoBehaviour, IMinigame
     [SerializeField]
     private TextMeshProUGUI timerText;
     [SerializeField]
-    private Image imgtest;
-    [SerializeField]
     private GameObject wirePrefab;
     [SerializeField]
     private RectTransform wireArea;
