@@ -39,7 +39,7 @@ public class GameManager : MonoBehaviour
         {
             for (int y = 0; y < height; y++)
             {
-                Vector3 position = new Vector3(x * spacing, 0, y * spacing);
+                Vector3 position = new Vector3(x * spacing, 0.10f, y * spacing);
                 GameObject tileObject = Instantiate(tilePrefab, position, Quaternion.identity);
                 Tile tile = tileObject.GetComponent<Tile>();
                 tile.mineTileFP = this.mineTileFP;
