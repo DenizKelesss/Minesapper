@@ -127,6 +127,7 @@ public class WireCutterMinigame : MonoBehaviour, IMinigame
 
     private void MinigameFailed()
     {
+        instruction.text = string.Empty;
         EndMinigame();
         onFailure?.Invoke();
         var um = FindFirstObjectByType<UpgradeManager>();
@@ -137,6 +138,7 @@ public class WireCutterMinigame : MonoBehaviour, IMinigame
 
     private void MinigameSuccess()
     {
+        instruction.text = string.Empty;
         var um = FindFirstObjectByType<UpgradeManager>();
         if (um != null) um.GainXP(UnityEngine.Random.Range(5, 11));
         onSuccess?.Invoke();

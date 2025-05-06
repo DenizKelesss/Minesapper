@@ -6084,6 +6084,11 @@ MonoBehaviour:
   minigameUI: {fileID: 149423692}
   minigameTime: 10
   timerText: {fileID: 372708681}
+  imgtest: {fileID: 0}
+  wirePrefab: {fileID: 3590942596855371141, guid: 5263b90b77c43f24ea1f10ba90524452, type: 3}
+  wireArea: {fileID: 149423693}
+  wireAmount: 4
+  instruction: {fileID: 1034064678}
 --- !u!4 &1141781148
 Transform:
   m_ObjectHideFlags: 0
