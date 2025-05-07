@@ -92,7 +92,7 @@ public class GameManager : MonoBehaviour
             }
         }
 
-        StartCoroutine(SwitchToFirstPerson(0.75f));
+        StartCoroutine(SwitchToFirstPerson(0.75f)); // this feels like a sweet spot
 
         /*
         puzzleCamera.gameObject.SetActive(false);
@@ -120,7 +120,7 @@ public class GameManager : MonoBehaviour
         Vector3 startPos = puzzleCamera.transform.position;
         Quaternion startRot = puzzleCamera.transform.rotation;
 
-        // Target: the first-person camera's starting position/rotation
+        // firstPersonPlayer is the fpsCam holder
         Transform fpsCam = firstPersonPlayer.GetComponentInChildren<Camera>().transform;
         Vector3 targetPos = fpsCam.position;
         Quaternion targetRot = fpsCam.rotation;
@@ -132,7 +132,7 @@ public class GameManager : MonoBehaviour
             elapsed += Time.deltaTime;
             float t = Mathf.Clamp01(elapsed / delay);
 
-            // Smoothly interpolate position and rotation
+            // smooth position and rotation tranform - Lerp for pos transform, Slerp for rotation tranform
             puzzleCamera.transform.position = Vector3.Lerp(startPos, targetPos, t);
             puzzleCamera.transform.rotation = Quaternion.Slerp(startRot, targetRot, t);
 
