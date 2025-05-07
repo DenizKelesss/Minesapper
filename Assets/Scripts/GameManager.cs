@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using System.Collections;
 
 public class GameManager : MonoBehaviour
 {
@@ -91,8 +92,12 @@ public class GameManager : MonoBehaviour
             }
         }
 
+        StartCoroutine(SwitchToFirstPerson(0.75f));
+
+        /*
         puzzleCamera.gameObject.SetActive(false);
         firstPersonPlayer.SetActive(true);
+        */
     }
 
     public void CheckWinCondition()
@@ -108,6 +113,34 @@ public class GameManager : MonoBehaviour
 
 
         ActivateFirstPersonMode();
+    }
+
+    private IEnumerator SwitchToFirstPerson(float delay)
+    {
+        Vector3 startPos = puzzleCamera.transform.position;
+        Quaternion startRot = puzzleCamera.transform.rotation;
+
+        // Target: the first-person camera's starting position/rotation
+        Transform fpsCam = firstPersonPlayer.GetComponentInChildren<Camera>().transform;
+        Vector3 targetPos = fpsCam.position;
+        Quaternion targetRot = fpsCam.rotation;
+
+        float elapsed = 0f;
+
+        while (elapsed < delay)
+        {
+            elapsed += Time.deltaTime;
+            float t = Mathf.Clamp01(elapsed / delay);
+
+            // Smoothly interpolate position and rotation
+            puzzleCamera.transform.position = Vector3.Lerp(startPos, targetPos, t);
+            puzzleCamera.transform.rotation = Quaternion.Slerp(startRot, targetRot, t);
+
+            yield return null;
+        }
+
+        puzzleCamera.gameObject.SetActive(false);
+        firstPersonPlayer.SetActive(true);
     }
 
     void CalculateNumbers()
