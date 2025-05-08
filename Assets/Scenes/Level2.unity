@@ -11031,9 +11031,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogueSequence:
   - characterName: Pvt. John Wilkins
-    dialogueLine: 
-    duration: 4
-  - characterName: Pvt. John Wilkins
     dialogueLine: What's going on, where are we?
     duration: 3
   - characterName: Pvt. John Wilkins
