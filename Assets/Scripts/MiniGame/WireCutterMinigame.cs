@@ -83,7 +83,7 @@ public class WireCutterMinigame : MonoBehaviour, IMinigame
 
             wire.GetComponent<Image>().rectTransform.anchoredPosition = new Vector2(
                 0,
-                (-wireArea.rect.height)/2 + (i * (wireArea.rect.height / wireAmount)+100)
+                (-wireArea.rect.yMax+100) + (i * ((wireArea.rect.height-200) / (wireAmount-1)))
                 );
 
             var rand = Random.Range(1, 4);

@@ -18,6 +18,9 @@ public class GameManager : MonoBehaviour
 
     public int mineCount = 10;
 
+    [SerializeField]
+    bool canFail = false;
+
     void Start()
     {
         GenerateField();
@@ -25,6 +28,8 @@ public class GameManager : MonoBehaviour
 
     public void GameOver()
     {
+        if (!canFail)
+            return;
         gameOver = true;
         Debug.Log("Boom! Game Over.");
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
