@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 1938185586462653480}
   - component: {fileID: -4086965207661024728}
   - component: {fileID: 6757237833131237080}
+  - component: {fileID: -1034162595040138665}
   m_Layer: 0
   m_Name: mine_low
   m_TagString: Mine
@@ -136,3 +137,18 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.0494305, y: 0.18566118, z: 0.0494305}
   m_Center: {x: 0, y: 0.022155922, z: 0}
+--- !u!114 &-1034162595040138665
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4126290297463168858}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49bd75326e8720c46810d9039d279db3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mineTrigger: {fileID: 6757237833131237080}
+  explosion: {fileID: 0}
+  boomSound: {fileID: 0}
