@@ -18,6 +18,8 @@ public class GameManager : MonoBehaviour
 
     public int mineCount = 10;
 
+    public float mineHeight = 0.10f;
+
     [SerializeField]
     bool canFail = false;
 
@@ -45,7 +47,7 @@ public class GameManager : MonoBehaviour
         {
             for (int y = 0; y < height; y++)
             {
-                Vector3 position = new Vector3(x * spacing, 0.10f, y * spacing);
+                Vector3 position = new Vector3(x * spacing, mineHeight, y * spacing);
                 GameObject tileObject = Instantiate(tilePrefab, position, Quaternion.identity);
                 Tile tile = tileObject.GetComponent<Tile>();
                 tile.mineTileFP = this.mineTileFP;
