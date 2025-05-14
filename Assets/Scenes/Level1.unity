@@ -157,6 +157,7 @@ MonoBehaviour:
   mineTileFP: {fileID: 4126290297463168858, guid: 63a015cab6de6524eafc81b27e791f50, type: 3}
   puzzleCamera: {fileID: 330585545}
   mineCount: 4
+  mineHeight: 0.1
   canFail: 0
 --- !u!4 &23334853
 Transform:
