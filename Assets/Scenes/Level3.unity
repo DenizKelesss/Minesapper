@@ -157,6 +157,7 @@ MonoBehaviour:
   mineTileFP: {fileID: 4126290297463168858, guid: 63a015cab6de6524eafc81b27e791f50, type: 3}
   puzzleCamera: {fileID: 330585545}
   mineCount: 4
+  mineHeight: 0.1
   canFail: 0
 --- !u!4 &23334853
 Transform:
@@ -3644,7 +3645,7 @@ GameObject:
   - component: {fileID: 858662309}
   m_Layer: 0
   m_Name: mine_detector
-  m_TagString: Untagged
+  m_TagString: MineDetector
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
