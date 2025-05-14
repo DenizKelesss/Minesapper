@@ -11867,9 +11867,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogueSequence:
   - characterName: Sgt. Lukas Thaddeus
-    dialogueLine: 
-    duration: 4
-  - characterName: Sgt. Lukas Thaddeus
     dialogueLine: What's going on, where are we?
     duration: 3
   - characterName: Sgt. Lukas Thaddeus
