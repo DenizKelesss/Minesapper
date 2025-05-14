@@ -2,6 +2,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using System.Collections;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class mineScript : MonoBehaviour
 {
@@ -41,7 +42,7 @@ public class mineScript : MonoBehaviour
             {
                 mineTrigger.enabled = false;
 
-                // Lock screen and disable controls
+                // locks screen and disable controls - not sure it works, haven't tested without explosion.
                 if (controller) controller.enabled = false;
                 if (cameraLook) cameraLook.enabled = false;
                 Cursor.lockState = CursorLockMode.None;
@@ -54,13 +55,13 @@ public class mineScript : MonoBehaviour
 
     private IEnumerator HandleMineTrigger(PlayerHealth playerHealth)
     {
-        // Spawn explosion at this mine’s position
+        // spawns explosion at mine’s position
         if (explosionPrefab)
         {
             Instantiate(explosionPrefab, transform.position, Quaternion.identity);
         }
 
-        // Play sound
+        // plays explosion sfx
         if (boomSound && audioSource)
         {
             audioSource.PlayOneShot(boomSound);
@@ -80,9 +81,11 @@ public class mineScript : MonoBehaviour
             countdownText.gameObject.SetActive(false);
         }
 
-        yield return new WaitForSeconds(2f); // Total of 5 seconds delay
+        yield return new WaitForSeconds(2f); // total 5 seconds delay
 
-        playerHealth.DecreaseHealth(playerHealth.maxHealth);
+        /* playerHealth.DecreaseHealth(playerHealth.maxHealth);*/
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+
 
         yield return new WaitForSeconds(1f);
         if (deathMessage) deathMessage.gameObject.SetActive(false);
