@@ -5,6 +5,7 @@ using System.IO;
 public class UpgradeManager : MonoBehaviour
 {
     public int playerXP = 0;
+    private int playerTempXp = 0;
     public int playerHealthLevel = 1;
     public int failDamageLevel = 1;
     public int destroyChanceLevel = 1;
@@ -37,11 +38,11 @@ public class UpgradeManager : MonoBehaviour
     {
         SaveData data = new SaveData
         {
-            playerXP = playerXP,
-            playerHealthLevel = playerHealthLevel,
-            failDamageLevel = failDamageLevel,
-            destroyChanceLevel = destroyChanceLevel,
-            currentLevel = currentLevel
+            playerXP = this.playerXP+playerTempXp,
+            playerHealthLevel = this.playerHealthLevel,
+            failDamageLevel = this.failDamageLevel,
+            destroyChanceLevel = this.destroyChanceLevel,
+            currentLevel = this.currentLevel
         };
 
         string json = JsonUtility.ToJson(data);
@@ -75,16 +76,16 @@ public class UpgradeManager : MonoBehaviour
 
     public void GainXP(int amount)
     {
-        playerXP += amount;
-        Debug.Log("XP Gained: " + amount + ". Total XP: " + playerXP);
+        playerTempXp += amount;
+        Debug.Log("XP Gained: " + amount + ". Total XP: " + playerXP + ". Temp XP: " + playerTempXp);
         UpdateUI();
-        SaveProgress();
+        //SaveProgress();
     }
 
     private void UpdateUI()
     {
         if (playerXPText != null)
-            playerXPText.text = "XP: " + playerXP;
+            playerXPText.text = "XP: " + (playerXP + playerTempXp);
 
         if (playerHealthLevelText != null)
             playerHealthLevelText.text = "Health Level: " + playerHealthLevel;
