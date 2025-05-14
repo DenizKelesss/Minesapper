@@ -1,23 +1,90 @@
 using UnityEngine;
+using UnityEngine.UI;
+using System.Collections;
+using TMPro;
 
 public class mineScript : MonoBehaviour
 {
-    [SerializeField]
-    private BoxCollider mineTrigger;
-    [SerializeField]
-    private ParticleSystem explosion;
-    [SerializeField]
-    private AudioClip boomSound;
+    [SerializeField] private BoxCollider mineTrigger;
+    [SerializeField] private GameObject explosionPrefab; // Prefab version
+    [SerializeField] private AudioClip boomSound;
+    [SerializeField] private AudioSource audioSource;
+       
+    [Header("UI Elements")]
+    [SerializeField] private TextMeshProUGUI deathMessage;
+    [SerializeField] private TextMeshProUGUI countdownText;
+
+    private GameObject mineDetector;
+    private TextMeshProUGUI statusText;
+
+
+
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.tag == "Player")
+        if (other.CompareTag("Player"))
         {
-            var health = other.gameObject.GetComponent<PlayerHealth>();
-            if(health)
+            var health = other.GetComponent<PlayerHealth>();
+            var controller = other.GetComponent<FirstPersonPlayer>();
+            var cameraLook = other.GetComponentInChildren<FirstPersonPlayer>();
+
+            statusText = GameObject.Find("statusText").GetComponent<TextMeshProUGUI>();
+            statusText.gameObject.SetActive(false);
+
+            mineDetector = GameObject.FindWithTag("MineDetector");
+            if (mineDetector != null)
             {
-                health.DecreaseHealth(health.maxHealth);
+                mineDetector.SetActive(false);
+            }
+
+            if (health)
+            {
+                mineTrigger.enabled = false;
+
+                // Lock screen and disable controls
+                if (controller) controller.enabled = false;
+                if (cameraLook) cameraLook.enabled = false;
+                Cursor.lockState = CursorLockMode.None;
+                Cursor.visible = true;
+
+                StartCoroutine(HandleMineTrigger(health));
             }
         }
+    }
+
+    private IEnumerator HandleMineTrigger(PlayerHealth playerHealth)
+    {
+        // Spawn explosion at this mine’s position
+        if (explosionPrefab)
+        {
+            Instantiate(explosionPrefab, transform.position, Quaternion.identity);
+        }
+
+        // Play sound
+        if (boomSound && audioSource)
+        {
+            audioSource.PlayOneShot(boomSound);
+        }
+
+        // Show UI
+        if (deathMessage) deathMessage.gameObject.SetActive(true);
+
+        if (countdownText)
+        {
+            countdownText.gameObject.SetActive(true);
+            for (int i = 4; i > 0; i--)
+            {
+                countdownText.text = $"Restarting in {i}";
+                yield return new WaitForSeconds(1f);
+            }
+            countdownText.gameObject.SetActive(false);
+        }
+
+        yield return new WaitForSeconds(2f); // Total of 5 seconds delay
+
+        playerHealth.DecreaseHealth(playerHealth.maxHealth);
+
+        yield return new WaitForSeconds(1f);
+        if (deathMessage) deathMessage.gameObject.SetActive(false);
     }
 }

@@ -6,6 +6,7 @@ TagManager:
   tags:
   - ground
   - Mine
+  - MineDetector
   layers:
   - Default
   - TransparentFX
