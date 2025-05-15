@@ -108,7 +108,7 @@ public class UpgradeManager : MonoBehaviour
             playerHealthLevel++;
             ApplyUpgrades();
             UpdateUI();
-            SaveProgress();
+            //SaveProgress();
         }
     }
 
@@ -120,7 +120,7 @@ public class UpgradeManager : MonoBehaviour
             failDamageLevel++;
             ApplyUpgrades();
             UpdateUI();
-            SaveProgress();
+            //SaveProgress();
         }
     }
 
@@ -132,7 +132,7 @@ public class UpgradeManager : MonoBehaviour
             destroyChanceLevel++;
             ApplyUpgrades();
             UpdateUI();
-            SaveProgress();
+            //SaveProgress();
         }
     }
 
