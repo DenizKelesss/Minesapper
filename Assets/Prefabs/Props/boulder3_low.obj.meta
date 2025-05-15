@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 64770c94e5a735c4c90b0367fba74f2a
+guid: 7d1a2b509ae4d5f49af197f566168c36
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
@@ -7,8 +7,8 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: standardSurface1
-    second: {fileID: 2100000, guid: fb1c0a12e8bcd5b44b5218cf6dc53d2d, type: 2}
+      name: ZBrush_defualt_groupMat
+    second: {fileID: 2100000, guid: 3b5f985b605c4554ea3ef116e615e7e7, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
@@ -38,16 +38,16 @@ ModelImporter:
     isReadable: 0
   meshes:
     lODScreenPercentages: []
-    globalScale: 20
+    globalScale: 1
     meshCompression: 0
     addColliders: 0
     useSRGBMaterialColor: 1
     sortHierarchyByName: 1
     importPhysicalCameras: 1
     importVisibility: 1
-    importBlendShapes: 0
-    importCameras: 0
-    importLights: 0
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
     nodeNameCollisionStrategy: 1
     fileIdsGeneration: 2
     swapUVChannels: 0
@@ -93,7 +93,7 @@ ModelImporter:
     armStretch: 0.05
     legStretch: 0.05
     feetSpacing: 0
-    globalScale: 20
+    globalScale: 1
     rootMotionBoneName: 
     hasTranslationDoF: 0
     hasExtraRoot: 0

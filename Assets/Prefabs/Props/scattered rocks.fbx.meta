@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 64770c94e5a735c4c90b0367fba74f2a
+guid: 77d6e9603c534254580184fa7b705224
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
@@ -7,8 +7,8 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: standardSurface1
-    second: {fileID: 2100000, guid: fb1c0a12e8bcd5b44b5218cf6dc53d2d, type: 2}
+      name: boulder1
+    second: {fileID: 2100000, guid: d3095a69550c84045909fbdbbc128501, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
@@ -45,9 +45,9 @@ ModelImporter:
     sortHierarchyByName: 1
     importPhysicalCameras: 1
     importVisibility: 1
-    importBlendShapes: 0
-    importCameras: 0
-    importLights: 0
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
     nodeNameCollisionStrategy: 1
     fileIdsGeneration: 2
     swapUVChannels: 0
@@ -93,7 +93,7 @@ ModelImporter:
     armStretch: 0.05
     legStretch: 0.05
     feetSpacing: 0
-    globalScale: 20
+    globalScale: 0.19999999
     rootMotionBoneName: 
     hasTranslationDoF: 0
     hasExtraRoot: 0
