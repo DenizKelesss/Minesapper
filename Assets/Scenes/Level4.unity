@@ -4814,7 +4814,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHealth: 10
-  healthBar: {fileID: 0}
+  healthBar: {fileID: 990454174}
 --- !u!136 &1066548952
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -5742,7 +5742,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   destroyChance: 50
-  statusText: {fileID: 0}
+  statusText: {fileID: 748237841}
   detectorStatusText: {fileID: 148379578}
 --- !u!135 &1531165314
 SphereCollider:
