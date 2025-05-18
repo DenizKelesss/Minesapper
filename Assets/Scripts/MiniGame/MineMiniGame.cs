@@ -1,12 +1,10 @@
 using UnityEngine;
-using UnityEngine.UI;
 using TMPro;
 using System;
 using System.Collections.Generic;
 using Random = UnityEngine.Random;
 
 public class MineMiniGame : MonoBehaviour, IMinigame
-
 {
     public GameObject minigameUI;
     public RectTransform draggableObject;
@@ -16,6 +14,10 @@ public class MineMiniGame : MonoBehaviour, IMinigame
     public int numberOfWalls = 5;
     public float minigameTime = 10f;
     public TextMeshProUGUI timerText;
+
+    [Header("Wall Size Settings")]
+    public float uniformSizeMin = 50f;
+    public float uniformSizeMax = 150f;
 
     private Action onSuccess;
     private Action onFailure;
@@ -32,7 +34,7 @@ public class MineMiniGame : MonoBehaviour, IMinigame
         onSuccess = successCallback;
         onFailure = failureCallback;
         minigameUI.SetActive(true);
-        draggableObject.anchoredPosition = Vector2.zero;
+        draggableObject.anchoredPosition = new Vector2 (-854, 0);
         timeRemaining = (customTime > 0) ? customTime : minigameTime;
         GenerateMazeWalls();
     }
@@ -46,16 +48,21 @@ public class MineMiniGame : MonoBehaviour, IMinigame
         if (timerText != null) timerText.text = "Time: " + Mathf.Ceil(timeRemaining);
         if (timeRemaining <= 0) { MinigameFailed(); return; }
 
-        // Drag start/stop
+        // Drag start
         if (Input.GetMouseButtonDown(0) &&
             RectTransformUtility.RectangleContainsScreenPoint(draggableObject, Input.mousePosition))
+        {
             isDragging = true;
+        }
 
+        // Drag end & check for success
         if (Input.GetMouseButtonUp(0))
         {
-            isDragging = false;
-            if (RectTransformUtility.RectangleContainsScreenPoint(targetArea, Input.mousePosition))
+            if (isDragging && RectTransformUtility.RectangleContainsScreenPoint(targetArea, Input.mousePosition))
+            {
                 MinigameSuccess();
+            }
+            isDragging = false;
         }
 
         // Drag movement & collision detection
@@ -66,32 +73,42 @@ public class MineMiniGame : MonoBehaviour, IMinigame
                 Input.mousePosition, null, out Vector2 localPoint);
             draggableObject.anchoredPosition = localPoint;
 
-            if (CheckWallCollision()) MinigameFailed();
+            if (CheckWallCollision())
+            {
+                MinigameFailed();
+                isDragging = false;
+            }
         }
     }
 
     private void GenerateMazeWalls()
     {
         ClearWalls();
+
+        float edgeBuffer = 100f; // margin so walls don't get stuck on edges
+
         for (int i = 0; i < numberOfWalls; i++)
         {
             GameObject wall = Instantiate(wallPrefab, mazeArea);
             RectTransform wr = wall.GetComponent<RectTransform>();
+
+            // Position walls inside panel with buffer margin
             wr.anchoredPosition = new Vector2(
-                Random.Range(-mazeArea.rect.width / 2 + 50, mazeArea.rect.width / 2 - 50),
-                Random.Range(-mazeArea.rect.height / 2 + 50, mazeArea.rect.height / 2 - 50)
-            );
-            wr.sizeDelta = new Vector2(
-                Random.Range(50f, 150f),
-                Random.Range(10f, 50f)
+                Random.Range(-mazeArea.rect.width / 2 + edgeBuffer, mazeArea.rect.width / 2 - edgeBuffer),
+                Random.Range(-mazeArea.rect.height / 2 + edgeBuffer, mazeArea.rect.height / 2 - edgeBuffer)
             );
 
+            // Uniform square size in range
+            float uniformSize = Random.Range(uniformSizeMin, uniformSizeMax);
+            wr.sizeDelta = new Vector2(uniformSize, uniformSize);
+
+            // Setup wall movement
             var mover = wall.GetComponent<MiniGameWallMotion>();
             if (mover != null)
             {
                 mover.moveDirection = Random.insideUnitCircle.normalized;
-                mover.moveDistance = Random.Range(20f, 100f);
-                mover.moveSpeed = Random.Range(20f, 60f);
+                mover.moveDistance = Random.Range(150f, 450f);  // perimeter range
+                mover.moveSpeed = Random.Range(75f, 150f);     // movement speed
             }
 
             activeWalls.Add(wall);
@@ -103,10 +120,25 @@ public class MineMiniGame : MonoBehaviour, IMinigame
         foreach (var wall in activeWalls)
         {
             var wr = wall.GetComponent<RectTransform>();
-            if (RectTransformUtility.RectangleContainsScreenPoint(wr, Input.mousePosition))
+            // Check if draggableObject overlaps any wall rect (using screen points)
+            if (RectOverlaps(draggableObject, wr))
                 return true;
         }
         return false;
+    }
+
+    // Helper for RectTransform overlap check
+    private bool RectOverlaps(RectTransform a, RectTransform b)
+    {
+        Vector3[] aCorners = new Vector3[4];
+        Vector3[] bCorners = new Vector3[4];
+        a.GetWorldCorners(aCorners);
+        b.GetWorldCorners(bCorners);
+
+        Rect aRect = new Rect(aCorners[0], aCorners[2] - aCorners[0]);
+        Rect bRect = new Rect(bCorners[0], bCorners[2] - bCorners[0]);
+
+        return aRect.Overlaps(bRect);
     }
 
     private void ClearWalls()

@@ -4201,6 +4201,8 @@ MonoBehaviour:
   numberOfWalls: 20
   minigameTime: 10
   timerText: {fileID: 2006549661}
+  uniformSizeMin: 30
+  uniformSizeMax: 120
 --- !u!4 &464564079
 Transform:
   m_ObjectHideFlags: 0
@@ -9024,7 +9026,7 @@ MonoBehaviour:
   - {fileID: 464564078}
   - {fileID: 615444369}
   - {fileID: 1206695586}
-  gameForce: 2
+  gameForce: 0
 --- !u!4 &1150704657
 Transform:
   m_ObjectHideFlags: 0
@@ -12393,7 +12395,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -796, y: 0}
+  m_AnchoredPosition: {x: -854, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1714990826

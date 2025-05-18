@@ -18,27 +18,19 @@ public class MiniGameWallMotion : MonoBehaviour
 
     private void Update()
     {
-        if (movingForward)
-        {
-            rectTransform.anchoredPosition = Vector2.MoveTowards(
-                rectTransform.anchoredPosition,
-                startPos + moveDirection * moveDistance,
-                moveSpeed * Time.deltaTime
-            );
+        Vector2 targetPos = movingForward
+            ? startPos + moveDirection * moveDistance
+            : startPos;
 
-            if (Vector2.Distance(rectTransform.anchoredPosition, startPos + moveDirection * moveDistance) < 0.1f)
-                movingForward = false;
-        }
-        else
-        {
-            rectTransform.anchoredPosition = Vector2.MoveTowards(
-                rectTransform.anchoredPosition,
-                startPos,
-                moveSpeed * Time.deltaTime
-            );
+        rectTransform.anchoredPosition = Vector2.MoveTowards(
+            rectTransform.anchoredPosition,
+            targetPos,
+            moveSpeed * Time.deltaTime
+        );
 
-            if (Vector2.Distance(rectTransform.anchoredPosition, startPos) < 0.1f)
-                movingForward = true;
+        if (Vector2.Distance(rectTransform.anchoredPosition, targetPos) < 0.1f)
+        {
+            movingForward = !movingForward;
         }
     }
 }
