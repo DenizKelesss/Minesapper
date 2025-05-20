@@ -3097,8 +3097,8 @@ MonoBehaviour:
   numberOfWalls: 20
   minigameTime: 10
   timerText: {fileID: 1886778103}
-  uniformSizeMin: 50
-  uniformSizeMax: 150
+  uniformSizeMin: 20
+  uniformSizeMax: 60
 --- !u!4 &421858345
 Transform:
   m_ObjectHideFlags: 0
