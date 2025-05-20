@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 49e73f563e6ebf54499fc74cb80a98b1
+guid: 0ba3ed324c43b3b418348d91ebd7a7d6
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
@@ -31,11 +31,11 @@ ModelImporter:
     extraUserProperties: []
     clipAnimations:
     - serializedVersion: 16
-      name: fallen_idle
+      name: crouch
       takeName: mixamo.com
       internalID: -203655887218126122
       firstFrame: 0
-      lastFrame: 45
+      lastFrame: 75
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
