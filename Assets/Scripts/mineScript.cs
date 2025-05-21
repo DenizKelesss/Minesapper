@@ -30,7 +30,8 @@ public class mineScript : MonoBehaviour
             var cameraLook = other.GetComponentInChildren<FirstPersonPlayer>();
 
             statusText = GameObject.Find("statusText").GetComponent<TextMeshProUGUI>();
-            statusText.gameObject.SetActive(false);
+            if(statusText)
+                statusText.gameObject.SetActive(false);
 
             mineDetector = GameObject.FindWithTag("MineDetector");
             if (mineDetector != null)
