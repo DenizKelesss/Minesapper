@@ -7,7 +7,6 @@ public class MusicManager : MonoBehaviour
     public AudioClip mainMenuMusic;
     public AudioClip inGameMusic;
 
-    [SerializeField]
     private AudioSource audioSource;
     private static MusicManager instance;
 
@@ -22,11 +21,8 @@ public class MusicManager : MonoBehaviour
         instance = this;
         DontDestroyOnLoad(gameObject);
 
-        if(!audioSource)
-        {
-            audioSource = gameObject.AddComponent<AudioSource>();
-            audioSource.loop = true;
-        }
+        audioSource = gameObject.AddComponent<AudioSource>();
+        audioSource.loop = true;
 
         SceneManager.sceneLoaded += OnSceneLoaded;
     }

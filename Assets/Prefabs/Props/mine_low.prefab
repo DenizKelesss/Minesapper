@@ -150,7 +150,6 @@ GameObject:
   - component: {fileID: -4086965207661024728}
   - component: {fileID: 6757237833131237080}
   - component: {fileID: -1034162595040138665}
-  - component: {fileID: 5824198092593850032}
   m_Layer: 0
   m_Name: mine_low
   m_TagString: Mine
@@ -172,6 +171,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 3409651370503651393}
+  - {fileID: 6647012598724867133}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &6674445799211853270
@@ -290,23 +290,55 @@ MonoBehaviour:
   mineTrigger: {fileID: 6757237833131237080}
   explosionPrefab: {fileID: 8236790488369935376, guid: 8390c49b92a57b74a8c2f9a8456615e7, type: 3}
   boomSound: {fileID: 8300000, guid: 87bfff52ddc3b0047bff396c9e0244f2, type: 3}
-  audioSource: {fileID: 5824198092593850032}
+  audioSource: {fileID: 3537784578023696255}
   deathMessage: {fileID: 3361795238405121}
   countdownText: {fileID: 6531048160363677427}
---- !u!82 &5824198092593850032
+--- !u!1 &5411287126635258145
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6647012598724867133}
+  - component: {fileID: 3537784578023696255}
+  m_Layer: 0
+  m_Name: Audio Source
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6647012598724867133
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5411287126635258145}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4483972990370832350}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!82 &3537784578023696255
 AudioSource:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4126290297463168858}
+  m_GameObject: {fileID: 5411287126635258145}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: -6411848917718042615, guid: 60c883d91701c2345bd806e1dc1e1bab, type: 2}
+  OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 0}
   m_PlayOnAwake: 1
-  m_Volume: 0.845
+  m_Volume: 0.5
   m_Pitch: 1
   Loop: 0
   Mute: 0
