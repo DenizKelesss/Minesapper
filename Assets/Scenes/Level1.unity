@@ -8737,7 +8737,7 @@ MonoBehaviour:
   - {fileID: 464564078}
   - {fileID: 615444369}
   - {fileID: 1206695586}
-  gameForce: 0
+  gameForce: -1
 --- !u!4 &1150704657
 Transform:
   m_ObjectHideFlags: 0
