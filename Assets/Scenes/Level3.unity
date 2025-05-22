@@ -6771,8 +6771,8 @@ MonoBehaviour:
   playerMineDestroyChanceLevelText: {fileID: 717158108}
   currentLevelText: {fileID: 2099665600}
   xpPerUpgrade: 10
-  playerHealth: {fileID: 0}
-  mineDestructor: {fileID: 0}
+  playerHealth: {fileID: 1066548951}
+  mineDestructor: {fileID: 1531165313}
   baseMaxHealth: 10
   baseFailDamage: 3
   baseDestroyChance: 50
