@@ -105,6 +105,7 @@ MonoBehaviour:
   isMine: 0
   isRevealed: 0
   isFlagged: 0
+  mineTileFP: {fileID: 4126290297463168858, guid: 63a015cab6de6524eafc81b27e791f50, type: 3}
 --- !u!65 &6109061057419898371
 BoxCollider:
   m_ObjectHideFlags: 0
