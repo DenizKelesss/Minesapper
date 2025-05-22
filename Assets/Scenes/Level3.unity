@@ -4397,8 +4397,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8eafe07490de3da4ea3ef35445a128da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  minigameUI: {fileID: 1997391853}
-  instructionText: {fileID: 435438774}
+  minigameUI: {fileID: 1194370794}
+  instructionText: {fileID: 1997391855}
   reactionButton: {fileID: 963579171}
 --- !u!4 &636620169
 Transform:
