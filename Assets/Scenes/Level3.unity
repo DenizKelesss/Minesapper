@@ -371,7 +371,7 @@ MonoBehaviour:
   puzzleCamera: {fileID: 330585545}
   mineCount: 4
   mineHeight: 0.1
-  canFail: 0
+  canFail: 1
 --- !u!4 &23334853
 Transform:
   m_ObjectHideFlags: 0
