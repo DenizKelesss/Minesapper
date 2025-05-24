@@ -10556,7 +10556,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   destroyChance: 50
-  statusText: {fileID: 0}
+  statusText: {fileID: 748237841}
   detectorStatusText: {fileID: 5471022689414952699}
   detectorModel: {fileID: 2116186457531941485}
   detectorAnim: {fileID: 177960835438403727}
