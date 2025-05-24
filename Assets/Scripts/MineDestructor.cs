@@ -12,11 +12,17 @@ public class MineDestructor : MonoBehaviour
 
     private MinigameManager mmManager;
 
+    [SerializeField] GameObject detectorModel;
+    [SerializeField] Animator detectorAnim;
+    [SerializeField] ParticleSystem smoke;
+
     private void Start()
     {
         mmManager = FindFirstObjectByType<MinigameManager>();
         if (mmManager == null)
             Debug.LogError("MineDestructor: No MinigameManager found in scene!");
+        detectorAnim = detectorModel.GetComponent<Animator>();
+        
     }
 
     private void Update()
@@ -31,6 +37,9 @@ public class MineDestructor : MonoBehaviour
                 UpdateStatus("Mine destroyed successfully!");
                 Destroy(currentMine.gameObject);
                 currentMine = null;
+                //anim and smoke
+                detectorAnim.Play("detector_disarm");
+                smoke.Play();
             }
             else
             {
