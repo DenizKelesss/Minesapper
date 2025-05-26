@@ -157,6 +157,7 @@ MonoBehaviour:
   mineTileFP: {fileID: 4126290297463168858, guid: 63a015cab6de6524eafc81b27e791f50, type: 3}
   puzzleCamera: {fileID: 330585545}
   mineCount: 4
+  spawnedMineFPCount: 0
   mineHeight: 0.1
   canFail: 1
 --- !u!4 &23334853
@@ -660,8 +661,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -710, y: 372}
-  m_SizeDelta: {x: 287.102, y: 106.2639}
+  m_AnchoredPosition: {x: -734.9, y: 372}
+  m_SizeDelta: {x: 336.9, y: 106.2639}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &147440662
 MonoBehaviour:
@@ -685,15 +686,15 @@ MonoBehaviour:
       m_Calls: []
   m_text: 
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2100000, guid: e73a58f6e2794ae7b1b7e50b7fb811b0, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 015471c3c6a9ac34fad3097e36b7b31d, type: 2}
+  m_sharedMaterial: {fileID: -1823822941457300653, guid: 015471c3c6a9ac34fad3097e36b7b31d, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
     rgba: 4278190313
-  m_fontColor: {r: 0.03607474, g: 0.5471698, b: 0.002580996, a: 1}
+  m_fontColor: {r: 0.6901961, g: 0.015686275, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -8677,7 +8678,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -666.0966, y: 455.91968}
+  m_AnchoredPosition: {x: 0, y: 380.16}
   m_SizeDelta: {x: 459.8068, y: 96.1606}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1886778103
@@ -8710,7 +8711,7 @@ MonoBehaviour:
   m_fontColor32:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColor: {r: 0.6901961, g: 0.015686275, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -8727,15 +8728,15 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 48
-  m_fontSizeBase: 48
+  m_fontSize: 70
+  m_fontSizeBase: 70
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 0
-  m_HorizontalAlignment: 1
-  m_VerticalAlignment: 256
+  m_fontStyle: 1
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
