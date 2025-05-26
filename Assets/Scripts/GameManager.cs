@@ -16,7 +16,10 @@ public class GameManager : MonoBehaviour
 
     public Camera puzzleCamera;
 
-    public int mineCount = 10;
+    public int mineCount;
+
+    //[HideInInspector]
+    public int spawnedMineFPCount = 0;
 
     public float mineHeight = 0.10f;
 
