@@ -90,19 +90,22 @@ public class Tile : MonoBehaviour
 
     public void RevealMineForFPS()
     {
+        GameManager gm = FindFirstObjectByType<GameManager>();
+
         if (isMine)
         {
-            if (mineTileFP != null)
+            if (mineTileFP != null && gm.spawnedMineFPCount < gm.mineCount)
             {
                 Instantiate(mineTileFP, transform.position, Quaternion.identity);
+                gm.spawnedMineFPCount++;
                 gameObject.tag = "Mine";
             }
             else
             {
-                Debug.LogWarning("mineTileFP not assigned on tile: " + gameObject.name);
+                Debug.LogWarning("mineTileFP not assigned or spawn limit reached: " + gameObject.name);
             }
 
-            Destroy(gameObject); // or gameObject.SetActive(false);
+            Destroy(gameObject); // or gameObject.SetActive(false), I used to know when to use which but forgot;
         }
         else
         {
