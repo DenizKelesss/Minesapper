@@ -6444,8 +6444,8 @@ MonoBehaviour:
   playerMineDestroyChanceLevelText: {fileID: 717158108}
   currentLevelText: {fileID: 2099665600}
   xpPerUpgrade: 10
-  playerHealth: {fileID: 0}
-  mineDestructor: {fileID: 0}
+  playerHealth: {fileID: 4533542858070040730}
+  mineDestructor: {fileID: 7326420753987740613}
   baseMaxHealth: 10
   baseFailDamage: 3
   baseDestroyChance: 50
@@ -8125,7 +8125,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1643248629
 RectTransform:
   m_ObjectHideFlags: 0
