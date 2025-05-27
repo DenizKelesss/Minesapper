@@ -85,7 +85,7 @@ public class UpgradeManager : MonoBehaviour
     private void UpdateUI()
     {
         if (playerXPText != null)
-            playerXPText.text = "XP: " + (playerXP + playerTempXp);
+            playerXPText.text = "XP: " + (playerXP /*+ playerTempXp*/);
 
         if (playerHealthLevelText != null)
             playerHealthLevelText.text = "Health Level: " + playerHealthLevel;
