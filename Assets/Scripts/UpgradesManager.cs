@@ -79,7 +79,7 @@ public class UpgradeManager : MonoBehaviour
         playerTempXp += amount;
         Debug.Log("XP Gained: " + amount + ". Total XP: " + playerXP + ". Temp XP: " + playerTempXp);
         UpdateUI();
-        //SaveProgress();
+        SaveProgress();
     }
 
     private void UpdateUI()
@@ -108,7 +108,7 @@ public class UpgradeManager : MonoBehaviour
             playerHealthLevel++;
             ApplyUpgrades();
             UpdateUI();
-            //SaveProgress();
+            SaveProgress();
         }
     }
 
@@ -120,7 +120,7 @@ public class UpgradeManager : MonoBehaviour
             failDamageLevel++;
             ApplyUpgrades();
             UpdateUI();
-            //SaveProgress();
+            SaveProgress();
         }
     }
 
@@ -132,7 +132,7 @@ public class UpgradeManager : MonoBehaviour
             destroyChanceLevel++;
             ApplyUpgrades();
             UpdateUI();
-            //SaveProgress();
+            SaveProgress();
         }
     }
 
