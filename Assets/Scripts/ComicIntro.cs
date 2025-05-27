@@ -4,6 +4,8 @@ using System.Collections;
 
 public class ComicIntro : MonoBehaviour
 {
+    public static bool comicIntroHasPlayed = false; // this should make sure the Comic sections are only played once.
+
     public GameObject comicPanel;
     public GameObject comicPagesObject;
     public Image[] comicPages;
@@ -17,6 +19,16 @@ public class ComicIntro : MonoBehaviour
 
     void Start()
     {
+        if (comicIntroHasPlayed)
+        {
+            comicPanel.SetActive(false);
+            comicPagesObject.SetActive(false);
+            Destroy(this.gameObject);
+            return;
+        }
+
+        comicIntroHasPlayed = true;
+
         comicPanel.SetActive(true);
         nextButton.onClick.AddListener(SkipToNextPage);
         ShowPage(currentPage);
