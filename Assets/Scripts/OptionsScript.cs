@@ -56,9 +56,12 @@ public class OptionsScript : MonoBehaviour
                 Screen.SetResolution(1920, 1080, fullscreen);
                 break;
             case 1:
-                Screen.SetResolution(1440, 900, fullscreen);
+                Screen.SetResolution(1920, 1080, fullscreen);
                 break;
             case 2:
+                Screen.SetResolution(1440, 900, fullscreen);
+                break;
+            case 3:
                 Screen.SetResolution(1366, 768, fullscreen);
                 break;
         }
