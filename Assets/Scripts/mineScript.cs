@@ -74,7 +74,7 @@ public class mineScript : MonoBehaviour
         if (countdownText)
         {
             countdownText.gameObject.SetActive(true);
-            for (int i = 4; i > 0; i--)
+            for (int i = 2; i > 0; i--)
             {
                 countdownText.text = $"Restarting in {i}";
                 yield return new WaitForSeconds(1f);
@@ -82,7 +82,7 @@ public class mineScript : MonoBehaviour
             countdownText.gameObject.SetActive(false);
         }
 
-        yield return new WaitForSeconds(2f); // total 5 seconds delay
+        yield return new WaitForSeconds(1f); // total 5 seconds delay
 
         /* playerHealth.DecreaseHealth(playerHealth.maxHealth);*/
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);

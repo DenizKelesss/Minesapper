@@ -22,7 +22,7 @@ public class SceneTransition : MonoBehaviour
             isTransitioning = true;
             if (statusText != null)
             {
-                statusText.text = "Level Cleared!";
+                statusText.text = "Minefield Cleared! Well done, soldier!";
             }
             StartCoroutine(LoadNextSceneWithCountdown(5f));  // 5 seconds countdown, might be too much?
         }
@@ -36,7 +36,7 @@ public class SceneTransition : MonoBehaviour
         {
             if (countdownText != null)
             {
-                countdownText.text = "Next Level In: " + Mathf.CeilToInt(remainingTime).ToString();
+                countdownText.text = "Transporting to next minefield in: " + Mathf.CeilToInt(remainingTime).ToString();
             }
 
             remainingTime -= Time.deltaTime;

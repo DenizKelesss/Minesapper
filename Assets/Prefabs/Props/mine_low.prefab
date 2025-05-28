@@ -34,8 +34,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.000013351, y: -78.05167}
-  m_SizeDelta: {x: 525.2506, y: 156.1033}
+  m_AnchoredPosition: {x: -0.000021938, y: 0.000022411}
+  m_SizeDelta: {x: 525.25, y: 323.8856}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &6251721097086905160
 CanvasRenderer:
@@ -65,18 +65,18 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: YOU DIED
+  m_text: YOU'VE BLOWN TO BITS
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2100000, guid: e73a58f6e2794ae7b1b7e50b7fb811b0, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 0c0787764ac2f59418cfa9691f2d78ac, type: 2}
+  m_sharedMaterial: {fileID: -6051008793178522383, guid: 0c0787764ac2f59418cfa9691f2d78ac, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4278207695
-  m_fontColor: {r: 0.8113208, g: 0.26603353, b: 0, a: 1}
-  m_enableVertexGradient: 1
+    rgba: 4278190913
+  m_fontColor: {r: 0.254717, g: 0.010067865, b: 0, a: 1}
+  m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
     topLeft: {r: 0.26415092, g: 0.14328942, b: 0.14328942, a: 1}
@@ -99,8 +99,8 @@ MonoBehaviour:
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 3
-  m_HorizontalAlignment: 2
-  m_VerticalAlignment: 512
+  m_HorizontalAlignment: 32
+  m_VerticalAlignment: 4096
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
@@ -560,8 +560,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 9d1df11eb94585a41b9626855923a590, type: 2}
+  m_sharedMaterial: {fileID: 6472981579006701739, guid: 9d1df11eb94585a41b9626855923a590, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []

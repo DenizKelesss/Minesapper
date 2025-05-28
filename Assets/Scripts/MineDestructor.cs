@@ -43,7 +43,7 @@ public class MineDestructor : MonoBehaviour
             }
             else
             {
-                UpdateStatus("Failed! Launching minigame...");
+                UpdateStatus("Malfunction detected! Must be disarmed...");
                 if (mmManager != null)
                 {
                     isMinigameActive = true;
@@ -87,7 +87,7 @@ public class MineDestructor : MonoBehaviour
 
     private void OnMinigameFailure(Collider mine)
     {
-        UpdateStatus("Mine exploded during minigame!");
+        UpdateStatus("Mine exploded while disarming!");
         Destroy(mine.gameObject);
         isMinigameActive = false;
     }
