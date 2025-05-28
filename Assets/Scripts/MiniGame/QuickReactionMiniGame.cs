@@ -41,7 +41,7 @@ public class QuickReactionMiniGame : MonoBehaviour, IMinigame
     private IEnumerator StartReactionWindow(float delay)
     {
         yield return new WaitForSeconds(delay);
-        instructionText.text = "NOW!";
+        instructionText.text = "ABORT NOW!";
         canReact = true;
         reactionStartTime = Time.time;
 
