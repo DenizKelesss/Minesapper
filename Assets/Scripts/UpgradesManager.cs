@@ -16,8 +16,9 @@ public class UpgradeManager : MonoBehaviour
     public TextMeshProUGUI playerResistanceLevelText;
     public TextMeshProUGUI playerMineDestroyChanceLevelText;
 
-
+    /*
     public TextMeshProUGUI currentLevelText;
+    */
 
     public int xpPerUpgrade = 10;
 
@@ -95,9 +96,10 @@ public class UpgradeManager : MonoBehaviour
 
         if (playerMineDestroyChanceLevelText != null)
             playerMineDestroyChanceLevelText.text = "Damage Resistance Level: " + destroyChanceLevel;
-
+        /*
         if (currentLevelText != null)
             currentLevelText.text = "Level: " + currentLevel;  // Show the current level in the UI
+        */
     }
 
     public void UpgradePlayerHealth()
