@@ -1,0 +1,4939 @@
+fileFormatVersion: 2
+guid: d1ef5115692665f49be4fad3a11ca679
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 16384
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: tutgif2_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 11664
+        width: 1152
+        height: 648
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 581138fe77188b642a0267b7f2bd0674
+      internalID: 170764099
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tutgif2_1
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 11664
+        width: 1152
+        height: 648
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63d6adf94658cec4399924c500cef656
+      internalID: 1974489613
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tutgif2_2
+      rect:
+        serializedVersion: 2
+        x: 2304
+        y: 11664
+        width: 1152
+        height: 648
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cffdc38879f2300468f0656bc5019562
+      internalID: 1629466905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tutgif2_3
+      rect:
+        serializedVersion: 2
+        x: 3456
+        y: 11664
+        width: 1152
+        height: 648
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b713e83dbe7e6a4c9b59b3443ad23ec
+      internalID: -1391406927
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tutgif2_4
+      rect:
+        serializedVersion: 2
+        x: 4608
+        y: 11664
+        width: 1152
+        height: 648
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a15e2ffe968a4e44b97ad6bae247a036
+      internalID: 1106079930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tutgif2_5
+      rect:
+        serializedVersion: 2
+        x: 5760
+        y: 11664
+        width: 1152
+        height: 648
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27c8b41458a2c25499e2321447bf074f
+      internalID: 319524134
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tutgif2_6
+      rect:
+        serializedVersion: 2
+        x: 6912
+        y: 11664
+        width: 1152
+        height: 648
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e646e4dfb853e0d45ab46d79ae11b963
+      internalID: 681291590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tutgif2_7
+      rect:
+        serializedVersion: 2
+        x: 8064
+        y: 11664
+        width: 1152
+        height: 648
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04731c1159ae79a4abe529caf9ecc4e3
+      internalID: -1323498768
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tutgif2_8
+      rect:
+        serializedVersion: 2
+        x: 9216
+        y: 11664
+        width: 1152
+        height: 648
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e6ca4f76d66f5948a5aefbbd5b36939
+      internalID: -297234599
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tutgif2_9
+      rect:
+        serializedVersion: 2
+        x: 10368
+        y: 11664
+        width: 1152
+        height: 648
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1dcdc6f5545c7846be4e1e8a807bac7
+      internalID: 2138293586
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tutgif2_10
+      rect:
+        serializedVersion: 2
+        x: 11520
+        y: 11664
+        width: 1152
+        height: 648
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31cf98123a938aa4d84a99bc799bf2bf
+      internalID: -278395742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tutgif2_11
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 11016
+        width: 1152
+        height: 648
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99ba99ca520eee2439f3ec5302851aa6
+      internalID: 1759993207
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tutgif2_12
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 11016
+        width: 1152
+        height: 648
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 959c642cef66bc34da23cf62b7f28373
+      internalID: 838735121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tutgif2_13
+      rect:
+        serializedVersion: 2
+        x: 2304
+        y: 11016
+        width: 1152
+        height: 648
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76659fea6a77b7445ba63ade59a6cafb
+      internalID: 181764937
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tutgif2_14
+      rect:
+        serializedVersion: 2
+        x: 3456
+        y: 11016
+        width: 1152
+        height: 648
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04cb9458ef605f847ac60ae31d6a1827
+      internalID: -1793389988
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tutgif2_15
+      rect:
+        serializedVersion: 2
+        x: 4608
+        y: 11016
+        width: 1152
+        height: 648
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03a512d170d8985458e7b9cc3b7da7b2
+      internalID: -807922939
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tutgif2_16
+      rect:
+        serializedVersion: 2
+        x: 5760
+        y: 11016
+        width: 1152
+        height: 648
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c13ba2fc47baa7e43910a4d32276ada7
+      internalID: -1568067827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tutgif2_17
+      rect:
+        serializedVersion: 2
+        x: 6912
+        y: 11016
+        width: 1152
+        height: 648
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 008027a0c74beaf4fa54015b80e8f9f6
+      internalID: -2139096305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tutgif2_18
+      rect:
+        serializedVersion: 2
+        x: 8064
+        y: 11016
+        width: 1152
+        height: 648
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a96ba6aeb3e4b54ea879e0c63296a26
+      internalID: -842450887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tutgif2_19
+      rect:
+        serializedVersion: 2
+        x: 9216
+        y: 11016
+        width: 1152
+        height: 648
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c93305e54d9703547931c51007b18d58
+      internalID: 991289843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tutgif2_20
+      rect:
+        serializedVersion: 2
+        x: 10368
+        y: 11016
+        width: 1152
+        height: 648
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e18aa364bbb1ef46b16736c0b3c95a4
+      internalID: 333340317
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tutgif2_21
+      rect:
+        serializedVersion: 2
+        x: 11520
+        y: 11016
+        width: 1152
+        height: 648
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e942f7c4ee2a0e4b8d2922b86c87c08
+      internalID: 1827356686
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tutgif2_22
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 10368
+        width: 1152
+        height: 648
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4cf89b9212b84cb46b90249cf50dbe0c
+      internalID: -698563484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tutgif2_23
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 10368
+        width: 1152
+        height: 648
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce53f658c92d9b847a2b5a013276f75a
+      internalID: 1160130360
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tutgif2_24
+      rect:
+        serializedVersion: 2
+        x: 2304
+        y: 10368
+        width: 1152
+        height: 648
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6654cbeecf1145a46ada3c5730f20ee7
+      internalID: -1327046753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tutgif2_25
+      rect:
+        serializedVersion: 2
+        x: 3456
+        y: 10368
+        width: 1152
+        height: 648
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa5fb4ebde622bb41bc04ef246b2b651
+      internalID: 761263167
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tutgif2_26
+      rect:
+        serializedVersion: 2
+        x: 4608
+        y: 10368
+        width: 1152
+        height: 648
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 338cf74243319624b824ec4752deea8b
+      internalID: -1154463367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tutgif2_27
+      rect:
+        serializedVersion: 2
+        x: 5760
+        y: 10368
+        width: 1152
+        height: 648
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6bb33ed2dc1a0ad45b7efa6252bb87f4
+      internalID: 1653922271
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tutgif2_28
+      rect:
+        serializedVersion: 2
+        x: 6912
+        y: 10368
+        width: 1152
+        height: 648
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd94430c9156d57429300652ef1be9b5
+      internalID: 744262900
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tutgif2_29
+      rect:
+        serializedVersion: 2
+        x: 8064
+        y: 10368
+        width: 1152
+        height: 648
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ffa7accc0649cea40b935d3efb3404c1
+      internalID: 179208228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tutgif2_30
+      rect:
+        serializedVersion: 2
+        x: 9216
+        y: 10368
+        width: 1152
+        height: 648
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 229fbd72c9982d84dbe7ec164724c390
+      internalID: 213837507
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tutgif2_31
+      rect:
+        serializedVersion: 2
+        x: 10368
+        y: 10368
+        width: 1152
+        height: 648
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b861032b890d215409b906aca9cf9278
+      internalID: 580686565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tutgif2_32
+      rect:
+        serializedVersion: 2
+        x: 11520
+        y: 10368
+        width: 1152
+        height: 648
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4119dff58b52b9e4183e8a51207f84cb
+      internalID: 838046763
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tutgif2_33
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 9720
+        width: 1152
+        height: 648
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3bd13dc7f55bd74e823278885b4cb21
+      internalID: -807998289
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tutgif2_34
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 9720
+        width: 1152
+        height: 648
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93acec1ef3a061f46bcc0305f393781f
+      internalID: 1577114603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tutgif2_35
+      rect:
+        serializedVersion: 2
+        x: 2304
+        y: 9720
+        width: 1152
+        height: 648
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 332dd148fb648834f9d497c31619212a
+      internalID: 827442378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tutgif2_36
+      rect:
+        serializedVersion: 2
+        x: 3456
+        y: 9720
+        width: 1152
+        height: 648
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59b8c993d6b2cc143aad4f845bd79500
+      internalID: 210420758
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tutgif2_37
+      rect:
+        serializedVersion: 2
+        x: 4608
+        y: 9720
+        width: 1152
+        height: 648
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ffab09094dd45848842dce52a70cec3
+      internalID: -381167352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tutgif2_38
+      rect:
+        serializedVersion: 2
+        x: 5760
+        y: 9720
+        width: 1152
+        height: 648
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3befcab0abd634d4193d221a1569dfda
+      internalID: -551260631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tutgif2_39
+      rect:
+        serializedVersion: 2
+        x: 6912
+        y: 9720
+        width: 1152
+        height: 648
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb1d3ceb64bc332498867c83d6925ad6
+      internalID: 666972472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tutgif2_40
+      rect:
+        serializedVersion: 2
+        x: 8064
+        y: 9720
+        width: 1152
+        height: 648
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d28c3c171f53784fafdef355506d537
+      internalID: -1274811191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tutgif2_41
+      rect:
+        serializedVersion: 2
+        x: 9216
+        y: 9720
+        width: 1152
+        height: 648
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be78aa634f629dc49a4d392509bec775
+      internalID: -600008210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tutgif2_42
+      rect:
+        serializedVersion: 2
+        x: 10368
+        y: 9720
+        width: 1152
+        height: 648
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9729a40335c79504aaece40e85a0ff5c
+      internalID: 952315548
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tutgif2_43
+      rect:
+        serializedVersion: 2
+        x: 11520
+        y: 9720
+        width: 1152
+        height: 648
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e87ac99b230eae447abdd6f1edccca73
+      internalID: 674834729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tutgif2_44
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 9072
+        width: 1152
+        height: 648
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02dfe7bb29be18640a6bfe93a8961fe9
+      internalID: -679365464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tutgif2_45
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 9072
+        width: 1152
+        height: 648
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19de8691476d53f48a13402a42fc1097
+      internalID: 1642742333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tutgif2_46
+      rect:
+        serializedVersion: 2
+        x: 2304
+        y: 9072
+        width: 1152
+        height: 648
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bbd67e00a908e364b9dd1adea5c7e09b
+      internalID: 1990204584
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tutgif2_47
+      rect:
+        serializedVersion: 2
+        x: 3456
+        y: 9072
+        width: 1152
+        height: 648
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1526ed61e65a8ec4eaee2897c9132ab7
+      internalID: -2093341127
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tutgif2_48
+      rect:
+        serializedVersion: 2
+        x: 4608
+        y: 9072
+        width: 1152
+        height: 648
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8420a90997b5a7d47b556e76ed830f44
+      internalID: 1062616700
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tutgif2_49
+      rect:
+        serializedVersion: 2
+        x: 5760
+        y: 9072
+        width: 1152
+        height: 648
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7143ba42b4486a4b9f4cb04e559809e
+      internalID: -63673465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tutgif2_50
+      rect:
+        serializedVersion: 2
+        x: 6912
+        y: 9072
+        width: 1152
+        height: 648
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 161288eb1f7f4564c9103eb4265c3a2b
+      internalID: 915600594
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tutgif2_51
+      rect:
+        serializedVersion: 2
+        x: 8064
+        y: 9072
+        width: 1152
+        height: 648
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89aa0b1bed38ef54bb272576678b2629
+      internalID: 345730407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tutgif2_52
+      rect:
+        serializedVersion: 2
+        x: 9216
+        y: 9072
+        width: 1152
+        height: 648
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94abd49fd9654a64d99e7a06d74a70bc
+      internalID: 1736993004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tutgif2_53
+      rect:
+        serializedVersion: 2
+        x: 10368
+        y: 9072
+        width: 1152
+        height: 648
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5e89501656c12d408ac9188546438d7
+      internalID: -1944193292
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tutgif2_54
+      rect:
+        serializedVersion: 2
+        x: 11520
+        y: 9072
+        width: 1152
+        height: 648
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 660695d125a3c174aa90d83c9c84d268
+      internalID: 1916646759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tutgif2_55
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 8424
+        width: 1152
+        height: 648
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d935573a02c175540a02632ffd7bdb88
+      internalID: -487821250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tutgif2_56
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 8424
+        width: 1152
+        height: 648
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6f3b27b59db78f47aff6b358f572e8a
+      internalID: 881928952
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tutgif2_57
+      rect:
+        serializedVersion: 2
+        x: 2304
+        y: 8424
+        width: 1152
+        height: 648
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 270e2fceb1fefeb4b876e537c7d40ccf
+      internalID: -1458162206
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tutgif2_58
+      rect:
+        serializedVersion: 2
+        x: 3456
+        y: 8424
+        width: 1152
+        height: 648
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d14888bb8d8bc684b96c47310da5da0f
+      internalID: -173835794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tutgif2_59
+      rect:
+        serializedVersion: 2
+        x: 4608
+        y: 8424
+        width: 1152
+        height: 648
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 296782ccdfd4e3449b26afa1bee42c6f
+      internalID: 438055297
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tutgif2_60
+      rect:
+        serializedVersion: 2
+        x: 5760
+        y: 8424
+        width: 1152
+        height: 648
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 017ff4e68436eb8478053c7cd74b5594
+      internalID: 1350800590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tutgif2_61
+      rect:
+        serializedVersion: 2
+        x: 6912
+        y: 8424
+        width: 1152
+        height: 648
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6221f892c08381f45bf196dd8ca59d38
+      internalID: 1559808203
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tutgif2_62
+      rect:
+        serializedVersion: 2
+        x: 8064
+        y: 8424
+        width: 1152
+        height: 648
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78acbb8a154a23344a43099075195e45
+      internalID: 201769401
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tutgif2_63
+      rect:
+        serializedVersion: 2
+        x: 9216
+        y: 8424
+        width: 1152
+        height: 648
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75a7df23f84c563449b2387f3285e048
+      internalID: 248478371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tutgif2_64
+      rect:
+        serializedVersion: 2
+        x: 10368
+        y: 8424
+        width: 1152
+        height: 648
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b72543f9717abe4abe867241eab7561
+      internalID: -1756097566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tutgif2_65
+      rect:
+        serializedVersion: 2
+        x: 11520
+        y: 8424
+        width: 1152
+        height: 648
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a465793d1f523034a9e39a604909c5fc
+      internalID: 57331773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tutgif2_66
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 7776
+        width: 1152
+        height: 648
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 024f2a6d2dcbdcc4788b9e482b82d30d
+      internalID: 488241371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tutgif2_67
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 7776
+        width: 1152
+        height: 648
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 441416b27b75e8a45ba014817446127a
+      internalID: -488814867
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tutgif2_68
+      rect:
+        serializedVersion: 2
+        x: 2304
+        y: 7776
+        width: 1152
+        height: 648
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 484b346aae0857749b39a63ab580b950
+      internalID: -1549113688
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tutgif2_69
+      rect:
+        serializedVersion: 2
+        x: 3456
+        y: 7776
+        width: 1152
+        height: 648
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0c31e9678549584f80c513b7b942f76
+      internalID: 1965034109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tutgif2_70
+      rect:
+        serializedVersion: 2
+        x: 4608
+        y: 7776
+        width: 1152
+        height: 648
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b468ef7c0735a3b488308b6f5be9b5ea
+      internalID: -1946096950
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tutgif2_71
+      rect:
+        serializedVersion: 2
+        x: 5760
+        y: 7776
+        width: 1152
+        height: 648
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ce40bfd0986f7f42a6e745c9f393934
+      internalID: 1347954352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tutgif2_72
+      rect:
+        serializedVersion: 2
+        x: 6912
+        y: 7776
+        width: 1152
+        height: 648
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0dd1fd66eaa39cb449dbba3ba5c3b37a
+      internalID: -2027153328
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tutgif2_73
+      rect:
+        serializedVersion: 2
+        x: 8064
+        y: 7776
+        width: 1152
+        height: 648
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f24b96f04b66d2441909779aa7d13bc6
+      internalID: -222468024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tutgif2_74
+      rect:
+        serializedVersion: 2
+        x: 9216
+        y: 7776
+        width: 1152
+        height: 648
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b582d596fdd92942897c8f030177d43
+      internalID: -21277963
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tutgif2_75
+      rect:
+        serializedVersion: 2
+        x: 10368
+        y: 7776
+        width: 1152
+        height: 648
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ee6ab333c49e8743a9054c78e61033d
+      internalID: 1186976586
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tutgif2_76
+      rect:
+        serializedVersion: 2
+        x: 11520
+        y: 7776
+        width: 1152
+        height: 648
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0488593745467ec4c8e5f0c1b78578a1
+      internalID: 746923667
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tutgif2_77
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 7128
+        width: 1152
+        height: 648
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 482ba573a83a7a749ad57322efef66b5
+      internalID: 1026295613
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tutgif2_78
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 7128
+        width: 1152
+        height: 648
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72c8fb3998c90cf46a02ab424d192fa9
+      internalID: 1395797288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tutgif2_79
+      rect:
+        serializedVersion: 2
+        x: 2304
+        y: 7128
+        width: 1152
+        height: 648
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f692705dcfc61d47995469ca14ca6a4
+      internalID: 889939295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tutgif2_80
+      rect:
+        serializedVersion: 2
+        x: 3456
+        y: 7128
+        width: 1152
+        height: 648
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f476e49f22acf8441af914abd38436b1
+      internalID: -2127847007
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tutgif2_81
+      rect:
+        serializedVersion: 2
+        x: 4608
+        y: 7128
+        width: 1152
+        height: 648
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82e3532acf298004aaf7040d08f28517
+      internalID: -324946442
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tutgif2_82
+      rect:
+        serializedVersion: 2
+        x: 5760
+        y: 7128
+        width: 1152
+        height: 648
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7db34dc2d4de8e448b6828db33e720c6
+      internalID: 467668077
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tutgif2_83
+      rect:
+        serializedVersion: 2
+        x: 6912
+        y: 7128
+        width: 1152
+        height: 648
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3b842bdbeecbb04fa6dcb4b3277e2a1
+      internalID: 1576931980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tutgif2_84
+      rect:
+        serializedVersion: 2
+        x: 8064
+        y: 7128
+        width: 1152
+        height: 648
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e820e716fad3cb4090b287ffdf74ea2
+      internalID: -1099916748
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tutgif2_85
+      rect:
+        serializedVersion: 2
+        x: 9216
+        y: 7128
+        width: 1152
+        height: 648
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8354eb3d3d4b3747a05ea578f683aae
+      internalID: -2120358662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tutgif2_86
+      rect:
+        serializedVersion: 2
+        x: 10368
+        y: 7128
+        width: 1152
+        height: 648
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d44217714a1bf34f84e02b873ac22c5
+      internalID: -1806949291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tutgif2_87
+      rect:
+        serializedVersion: 2
+        x: 11520
+        y: 7128
+        width: 1152
+        height: 648
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 680d9c9ebd8f90c41912be21f9bbdfbd
+      internalID: -1141552737
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tutgif2_88
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 6480
+        width: 1152
+        height: 648
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a7be243dcad1044fb1f5cafbc33db4f
+      internalID: 782884844
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tutgif2_89
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 6480
+        width: 1152
+        height: 648
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cfd84d6d1c0d6f04187083be3229aa5e
+      internalID: 55449259
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tutgif2_90
+      rect:
+        serializedVersion: 2
+        x: 2304
+        y: 6480
+        width: 1152
+        height: 648
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa7e7b85bbc9a844eb4bb21ea6e89eab
+      internalID: 1439410916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tutgif2_91
+      rect:
+        serializedVersion: 2
+        x: 3456
+        y: 6480
+        width: 1152
+        height: 648
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 201b86f7d2a5fba4284e5a4bf50ff969
+      internalID: -449466646
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tutgif2_92
+      rect:
+        serializedVersion: 2
+        x: 4608
+        y: 6480
+        width: 1152
+        height: 648
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56f92688ce177034fa0886a0231f0c6e
+      internalID: -1191264964
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tutgif2_93
+      rect:
+        serializedVersion: 2
+        x: 5760
+        y: 6480
+        width: 1152
+        height: 648
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93b40284cf68bbf4d90caad7e062e84c
+      internalID: 1549944566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tutgif2_94
+      rect:
+        serializedVersion: 2
+        x: 6912
+        y: 6480
+        width: 1152
+        height: 648
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5dcef63c2561ac4390dbba094a815cb
+      internalID: 403857661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tutgif2_95
+      rect:
+        serializedVersion: 2
+        x: 8064
+        y: 6480
+        width: 1152
+        height: 648
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cfc66cb128988084b94a12b170fd7a48
+      internalID: -424104178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tutgif2_96
+      rect:
+        serializedVersion: 2
+        x: 9216
+        y: 6480
+        width: 1152
+        height: 648
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d801f6436054fd34fa38609ecb181d94
+      internalID: -196560672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tutgif2_97
+      rect:
+        serializedVersion: 2
+        x: 10368
+        y: 6480
+        width: 1152
+        height: 648
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd763b6e86c292347bf87b9a7eb0b1e4
+      internalID: 263646080
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tutgif2_98
+      rect:
+        serializedVersion: 2
+        x: 11520
+        y: 6480
+        width: 1152
+        height: 648
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 164962b2bc204184a987cb2fc413f743
+      internalID: 1552381480
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tutgif2_99
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 5832
+        width: 1152
+        height: 648
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d92cdb485b4fd504694467da49a92c1e
+      internalID: -157761322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tutgif2_100
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 5832
+        width: 1152
+        height: 648
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f18532ad60e1a0d459b2316db279376a
+      internalID: -1829838817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tutgif2_101
+      rect:
+        serializedVersion: 2
+        x: 2304
+        y: 5832
+        width: 1152
+        height: 648
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa0bf8dadc2efa647bb05be182fc4003
+      internalID: -1987547067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tutgif2_102
+      rect:
+        serializedVersion: 2
+        x: 3456
+        y: 5832
+        width: 1152
+        height: 648
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39b4a662c6a5f9f4d9a8b6eaa7bc4fd6
+      internalID: -491324000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tutgif2_103
+      rect:
+        serializedVersion: 2
+        x: 4608
+        y: 5832
+        width: 1152
+        height: 648
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b70808b290064d4eaa1f920d6407858
+      internalID: -1178635954
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tutgif2_104
+      rect:
+        serializedVersion: 2
+        x: 5760
+        y: 5832
+        width: 1152
+        height: 648
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a97f660c7e8c5f240be16490d5bbec78
+      internalID: 903274064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tutgif2_105
+      rect:
+        serializedVersion: 2
+        x: 6912
+        y: 5832
+        width: 1152
+        height: 648
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01e92a1b7a2eedc408012a45209a8654
+      internalID: 1962621965
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tutgif2_106
+      rect:
+        serializedVersion: 2
+        x: 8064
+        y: 5832
+        width: 1152
+        height: 648
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 393e2c12640a14f4da5fb8744e82f817
+      internalID: -1567209612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tutgif2_107
+      rect:
+        serializedVersion: 2
+        x: 9216
+        y: 5832
+        width: 1152
+        height: 648
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3152ad3ef4b77e04faffdd58240a1256
+      internalID: -1895030583
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tutgif2_108
+      rect:
+        serializedVersion: 2
+        x: 10368
+        y: 5832
+        width: 1152
+        height: 648
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ddb961244ea6b1d44899b121bf29725d
+      internalID: -744339998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tutgif2_109
+      rect:
+        serializedVersion: 2
+        x: 11520
+        y: 5832
+        width: 1152
+        height: 648
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6de26f01af15c342a537e72d92c7319
+      internalID: 872972232
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tutgif2_110
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 5184
+        width: 1152
+        height: 648
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d233d0796359ada4880d0d3e55281acd
+      internalID: -284797078
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tutgif2_111
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 5184
+        width: 1152
+        height: 648
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e62827ed386e7824dba72533160e3c98
+      internalID: 1947337821
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tutgif2_112
+      rect:
+        serializedVersion: 2
+        x: 2304
+        y: 5184
+        width: 1152
+        height: 648
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54ca569260a6f184da0e7de99c7bcbc4
+      internalID: 1674910263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tutgif2_113
+      rect:
+        serializedVersion: 2
+        x: 3456
+        y: 5184
+        width: 1152
+        height: 648
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d9ba58363ae5c24aab0c97a1bd52a8e
+      internalID: -1884734389
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tutgif2_114
+      rect:
+        serializedVersion: 2
+        x: 4608
+        y: 5184
+        width: 1152
+        height: 648
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f93684829f92de0488ae4fc20050726c
+      internalID: 793149922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tutgif2_115
+      rect:
+        serializedVersion: 2
+        x: 5760
+        y: 5184
+        width: 1152
+        height: 648
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09b0ef4b1fead2f46a8ed46d1ee6bf85
+      internalID: -164085522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tutgif2_116
+      rect:
+        serializedVersion: 2
+        x: 6912
+        y: 5184
+        width: 1152
+        height: 648
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4f376eee7ba4e84c9cc361d12a3b9fe
+      internalID: 907673420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tutgif2_117
+      rect:
+        serializedVersion: 2
+        x: 8064
+        y: 5184
+        width: 1152
+        height: 648
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9071b2973c6dc2a4980a1d84a746d51e
+      internalID: 627306033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tutgif2_118
+      rect:
+        serializedVersion: 2
+        x: 9216
+        y: 5184
+        width: 1152
+        height: 648
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a63bb841c5574ed4ea3b955715d10fd4
+      internalID: 830926521
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tutgif2_119
+      rect:
+        serializedVersion: 2
+        x: 10368
+        y: 5184
+        width: 1152
+        height: 648
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 498f6032fa44fe94a89f0eb004ce806e
+      internalID: -104787167
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tutgif2_120
+      rect:
+        serializedVersion: 2
+        x: 11520
+        y: 5184
+        width: 1152
+        height: 648
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84e7ca883cbf80c48ae4350d56e0d0c2
+      internalID: 1680544126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tutgif2_121
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4536
+        width: 1152
+        height: 648
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 732cffb6cf81c5747a2e4cef3f587f07
+      internalID: 512548495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tutgif2_122
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 4536
+        width: 1152
+        height: 648
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a74afeb7f330854cbdbf2a7f0ec3413
+      internalID: 1427965150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tutgif2_123
+      rect:
+        serializedVersion: 2
+        x: 2304
+        y: 4536
+        width: 1152
+        height: 648
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 826d22bc7f0830a469e3f5c1dee5517d
+      internalID: 1089783500
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tutgif2_124
+      rect:
+        serializedVersion: 2
+        x: 3456
+        y: 4536
+        width: 1152
+        height: 648
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f0ed4bfa285d024dbc691be0a666549
+      internalID: 1610429466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tutgif2_125
+      rect:
+        serializedVersion: 2
+        x: 4608
+        y: 4536
+        width: 1152
+        height: 648
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 739265e234ec15848b72af4ca7d3ed1e
+      internalID: 1322574058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tutgif2_126
+      rect:
+        serializedVersion: 2
+        x: 5760
+        y: 4536
+        width: 1152
+        height: 648
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4adc3d5b8c873634cb7a718fc74d7676
+      internalID: 1798772588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tutgif2_127
+      rect:
+        serializedVersion: 2
+        x: 6912
+        y: 4536
+        width: 1152
+        height: 648
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6df6e253f40871428592417bf20a4a9
+      internalID: -1816519699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tutgif2_128
+      rect:
+        serializedVersion: 2
+        x: 8064
+        y: 4536
+        width: 1152
+        height: 648
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8c3871ce531f6e47ad6164976cd06fb
+      internalID: -51037931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tutgif2_129
+      rect:
+        serializedVersion: 2
+        x: 9216
+        y: 4536
+        width: 1152
+        height: 648
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c118c5e8f839094593b40a6295be790
+      internalID: 869040966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tutgif2_130
+      rect:
+        serializedVersion: 2
+        x: 10368
+        y: 4536
+        width: 1152
+        height: 648
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d55546b9628133c48894eb8677ccaf15
+      internalID: 936120360
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tutgif2_131
+      rect:
+        serializedVersion: 2
+        x: 11520
+        y: 4536
+        width: 1152
+        height: 648
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4788f3f60c3259e438f9c593a0b51891
+      internalID: -473952799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tutgif2_132
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3888
+        width: 1152
+        height: 648
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 875b332359d7f534f8ea277852abfc6b
+      internalID: -450944309
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tutgif2_133
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 3888
+        width: 1152
+        height: 648
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 884cf0780d937594bbf81c01e06b1f90
+      internalID: 2105708937
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tutgif2_134
+      rect:
+        serializedVersion: 2
+        x: 2304
+        y: 3888
+        width: 1152
+        height: 648
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20517096853bcdc41a6a8775d8ba717b
+      internalID: -496694350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tutgif2_135
+      rect:
+        serializedVersion: 2
+        x: 3456
+        y: 3888
+        width: 1152
+        height: 648
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 032646b5514e73943b826769490fcfb1
+      internalID: -504467586
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tutgif2_136
+      rect:
+        serializedVersion: 2
+        x: 4608
+        y: 3888
+        width: 1152
+        height: 648
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3bdacd7063b43d2479879c5114f15fd1
+      internalID: -1202930509
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tutgif2_137
+      rect:
+        serializedVersion: 2
+        x: 5760
+        y: 3888
+        width: 1152
+        height: 648
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6407cf17ed74b914f98f599312a6b676
+      internalID: 156634850
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tutgif2_138
+      rect:
+        serializedVersion: 2
+        x: 6912
+        y: 3888
+        width: 1152
+        height: 648
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e7d69ec00719ae45b1fd76878cbaf76
+      internalID: -1353957120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tutgif2_139
+      rect:
+        serializedVersion: 2
+        x: 8064
+        y: 3888
+        width: 1152
+        height: 648
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98b44b856229ec948b60631697509a62
+      internalID: -2030218438
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tutgif2_140
+      rect:
+        serializedVersion: 2
+        x: 9216
+        y: 3888
+        width: 1152
+        height: 648
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62dfd54f156eda340b1a1d5450cb8e6e
+      internalID: -1045029086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tutgif2_141
+      rect:
+        serializedVersion: 2
+        x: 10368
+        y: 3888
+        width: 1152
+        height: 648
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 561485c0143679043aa51eea81ecfb3c
+      internalID: -1806284929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tutgif2_142
+      rect:
+        serializedVersion: 2
+        x: 11520
+        y: 3888
+        width: 1152
+        height: 648
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9429f0fe2df7e0e40995a854aecf11d1
+      internalID: 1797582021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tutgif2_143
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3240
+        width: 1152
+        height: 648
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0b8f3d1a18457949948465b46be427e
+      internalID: -793561083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tutgif2_144
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 3240
+        width: 1152
+        height: 648
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d489bca24cff10c4b9c3c252e45bdf95
+      internalID: 1422119140
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tutgif2_145
+      rect:
+        serializedVersion: 2
+        x: 2304
+        y: 3240
+        width: 1152
+        height: 648
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8bb86995333dfdf419c2c67093931049
+      internalID: -1420501409
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tutgif2_146
+      rect:
+        serializedVersion: 2
+        x: 3456
+        y: 3240
+        width: 1152
+        height: 648
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5a5a650ff047874084b3a3ccb0193bf
+      internalID: -1079426403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tutgif2_147
+      rect:
+        serializedVersion: 2
+        x: 4608
+        y: 3240
+        width: 1152
+        height: 648
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b282134b3edb644983b2677b46f2d97
+      internalID: -63159355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tutgif2_148
+      rect:
+        serializedVersion: 2
+        x: 5760
+        y: 3240
+        width: 1152
+        height: 648
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b52e4ac9d9cd9904d86a414bec064323
+      internalID: 672004453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tutgif2_149
+      rect:
+        serializedVersion: 2
+        x: 6912
+        y: 3240
+        width: 1152
+        height: 648
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d81a7f66f345ab04d8689ab1ec21bfd1
+      internalID: 124547257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tutgif2_150
+      rect:
+        serializedVersion: 2
+        x: 8064
+        y: 3240
+        width: 1152
+        height: 648
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58e5e6b876b82534ab9abf33bb3aa9d8
+      internalID: 104707583
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tutgif2_151
+      rect:
+        serializedVersion: 2
+        x: 9216
+        y: 3240
+        width: 1152
+        height: 648
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 866cd926fbf003d4391f872b87cec136
+      internalID: 1614310848
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tutgif2_152
+      rect:
+        serializedVersion: 2
+        x: 10368
+        y: 3240
+        width: 1152
+        height: 648
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 214941a6297411f48acfcfa54ab3de24
+      internalID: 833895764
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tutgif2_153
+      rect:
+        serializedVersion: 2
+        x: 11520
+        y: 3240
+        width: 1152
+        height: 648
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: facf43f5861b67a42a54de92ca788808
+      internalID: 474762725
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tutgif2_154
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2592
+        width: 1152
+        height: 648
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8499c084d8a46744b83e6895d6606064
+      internalID: 1749102735
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tutgif2_155
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 2592
+        width: 1152
+        height: 648
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7b15fa8b45b0a848aae30ad762ba56b
+      internalID: -413059525
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tutgif2_156
+      rect:
+        serializedVersion: 2
+        x: 2304
+        y: 2592
+        width: 1152
+        height: 648
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2106ba95259ad6145af6d08aaff2ca28
+      internalID: 1894956963
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tutgif2_157
+      rect:
+        serializedVersion: 2
+        x: 3456
+        y: 2592
+        width: 1152
+        height: 648
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ebfea5bfb8cd8bd429f839c82ce437e7
+      internalID: -799023907
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tutgif2_158
+      rect:
+        serializedVersion: 2
+        x: 4608
+        y: 2592
+        width: 1152
+        height: 648
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 668682ed0801238408e83461e0cd4f60
+      internalID: 318413392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tutgif2_159
+      rect:
+        serializedVersion: 2
+        x: 5760
+        y: 2592
+        width: 1152
+        height: 648
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd2226f3338a05d45be185f139436c81
+      internalID: -158071043
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tutgif2_160
+      rect:
+        serializedVersion: 2
+        x: 6912
+        y: 2592
+        width: 1152
+        height: 648
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac23fca2382eaa24880832924f7d90da
+      internalID: 1902771829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tutgif2_161
+      rect:
+        serializedVersion: 2
+        x: 8064
+        y: 2592
+        width: 1152
+        height: 648
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4913b6d400ae6764da97507bf6355662
+      internalID: -1213473622
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tutgif2_162
+      rect:
+        serializedVersion: 2
+        x: 9216
+        y: 2592
+        width: 1152
+        height: 648
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7f958d944761b54d8278a23ed572428
+      internalID: 419783892
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tutgif2_163
+      rect:
+        serializedVersion: 2
+        x: 10368
+        y: 2592
+        width: 1152
+        height: 648
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da234e0c2a8c2b244ae5d09ca1db4bba
+      internalID: -70644779
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tutgif2_164
+      rect:
+        serializedVersion: 2
+        x: 11520
+        y: 2592
+        width: 1152
+        height: 648
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 496edfdd43d05c44da11868cf11e4978
+      internalID: 1347455526
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tutgif2_165
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1944
+        width: 1152
+        height: 648
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc0d3dbab149a3646a9befcda4178408
+      internalID: 1612319059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tutgif2_166
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 1944
+        width: 1152
+        height: 648
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 496d649bc85d7b449aae0cce8102d4f2
+      internalID: 869583701
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tutgif2_167
+      rect:
+        serializedVersion: 2
+        x: 2304
+        y: 1944
+        width: 1152
+        height: 648
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 796b3990722ffb845a4ea5e7d71c2ce0
+      internalID: 800446744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tutgif2_168
+      rect:
+        serializedVersion: 2
+        x: 3456
+        y: 1944
+        width: 1152
+        height: 648
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 147777ae8c05eee4194ab3e85e379f00
+      internalID: 55505397
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tutgif2_169
+      rect:
+        serializedVersion: 2
+        x: 4608
+        y: 1944
+        width: 1152
+        height: 648
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 887954ed278e51148bcd9e9cd52a7e79
+      internalID: 1593100607
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tutgif2_170
+      rect:
+        serializedVersion: 2
+        x: 5760
+        y: 1944
+        width: 1152
+        height: 648
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0197c355609e23498cb85746b198ed0
+      internalID: 1391213529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tutgif2_171
+      rect:
+        serializedVersion: 2
+        x: 6912
+        y: 1944
+        width: 1152
+        height: 648
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19ef7302249d2a3409cf9ac54971b4e4
+      internalID: 491250227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tutgif2_172
+      rect:
+        serializedVersion: 2
+        x: 8064
+        y: 1944
+        width: 1152
+        height: 648
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 969524745ec50314299e30b754c10b13
+      internalID: -2115493313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tutgif2_173
+      rect:
+        serializedVersion: 2
+        x: 9216
+        y: 1944
+        width: 1152
+        height: 648
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 602e0dbed809473439033d980b58f2cc
+      internalID: 1023413972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tutgif2_174
+      rect:
+        serializedVersion: 2
+        x: 10368
+        y: 1944
+        width: 1152
+        height: 648
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4155549eb08748b46ae3be2cc983c589
+      internalID: 1523419325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tutgif2_175
+      rect:
+        serializedVersion: 2
+        x: 11520
+        y: 1944
+        width: 1152
+        height: 648
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e7736c8fdd359e438da4eaa52d10964
+      internalID: -589140011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tutgif2_176
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1296
+        width: 1152
+        height: 648
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 897cc445f2f33c24bac5405c16117b65
+      internalID: 1115335905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tutgif2_177
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 1296
+        width: 1152
+        height: 648
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 221d23cfbf6981841aa7398e3eb5c952
+      internalID: 2118628255
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tutgif2_178
+      rect:
+        serializedVersion: 2
+        x: 2304
+        y: 1296
+        width: 1152
+        height: 648
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d15085cb66d5d14fac92f68a0c60e5e
+      internalID: -925974989
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tutgif2_179
+      rect:
+        serializedVersion: 2
+        x: 3456
+        y: 1296
+        width: 1152
+        height: 648
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0cfdab9a4fb061b4090fb68667236985
+      internalID: -1607643694
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tutgif2_180
+      rect:
+        serializedVersion: 2
+        x: 4608
+        y: 1296
+        width: 1152
+        height: 648
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74627b2c825d6f94ab3c5abfb6349e18
+      internalID: 827434018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tutgif2_181
+      rect:
+        serializedVersion: 2
+        x: 5760
+        y: 1296
+        width: 1152
+        height: 648
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28df1cf59d8a0dc4c84c499e03a3cd9b
+      internalID: -2145332001
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tutgif2_182
+      rect:
+        serializedVersion: 2
+        x: 6912
+        y: 1296
+        width: 1152
+        height: 648
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88e2155986ee2614292ab87469ed6368
+      internalID: -196163716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tutgif2_183
+      rect:
+        serializedVersion: 2
+        x: 8064
+        y: 1296
+        width: 1152
+        height: 648
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 794b640c91468284fb6865c0222487b7
+      internalID: 1831052563
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tutgif2_184
+      rect:
+        serializedVersion: 2
+        x: 9216
+        y: 1296
+        width: 1152
+        height: 648
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dff00ab566130714a858426951149ae8
+      internalID: -1661356176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tutgif2_185
+      rect:
+        serializedVersion: 2
+        x: 10368
+        y: 1296
+        width: 1152
+        height: 648
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75011f7b62c7b2e4d93cb9bd1fbdcdfe
+      internalID: -835828715
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tutgif2_186
+      rect:
+        serializedVersion: 2
+        x: 11520
+        y: 1296
+        width: 1152
+        height: 648
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3eec526a2c521a442a0ee25af3a6f303
+      internalID: -879455112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tutgif2_187
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 648
+        width: 1152
+        height: 648
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22b407147c2784346a2de27863846697
+      internalID: 1213319365
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tutgif2_188
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 648
+        width: 1152
+        height: 648
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8e30b6ac8144d04f8d7a81bb2e78bcf
+      internalID: 1592181874
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tutgif2_189
+      rect:
+        serializedVersion: 2
+        x: 2304
+        y: 648
+        width: 1152
+        height: 648
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44dbe0965c00f4d4ca155530a0270fd2
+      internalID: 999878423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tutgif2_190
+      rect:
+        serializedVersion: 2
+        x: 3456
+        y: 648
+        width: 1152
+        height: 648
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b58718d45415d4546bc7643f2fb24bef
+      internalID: -60685018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tutgif2_191
+      rect:
+        serializedVersion: 2
+        x: 4608
+        y: 648
+        width: 1152
+        height: 648
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0aa4a59e80389794cab4218a72dbc7bf
+      internalID: -2133165197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tutgif2_192
+      rect:
+        serializedVersion: 2
+        x: 5760
+        y: 648
+        width: 1152
+        height: 648
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ccbe0bb17ab4af74a955d73bc9575ee7
+      internalID: -2116642179
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tutgif2_193
+      rect:
+        serializedVersion: 2
+        x: 6912
+        y: 648
+        width: 1152
+        height: 648
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dcd2c1150074e6b4ab480811894bb494
+      internalID: 1407436859
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tutgif2_194
+      rect:
+        serializedVersion: 2
+        x: 8064
+        y: 648
+        width: 1152
+        height: 648
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 067d9cf99badbb84ab2d4e786797a093
+      internalID: -251530171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tutgif2_195
+      rect:
+        serializedVersion: 2
+        x: 9216
+        y: 648
+        width: 1152
+        height: 648
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15180538620ea034180c5a751abd94ff
+      internalID: -687640121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tutgif2_196
+      rect:
+        serializedVersion: 2
+        x: 10368
+        y: 648
+        width: 1152
+        height: 648
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23957adac878a074a98bdf8686972c56
+      internalID: 642628524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tutgif2_197
+      rect:
+        serializedVersion: 2
+        x: 11520
+        y: 648
+        width: 1152
+        height: 648
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a83c91ea43c6d8a459c25f3cb9b5fb66
+      internalID: -1535167180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tutgif2_198
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 1152
+        height: 648
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66cb3e2ba2a55fd419c512f266758d57
+      internalID: 1775089287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tutgif2_199
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 0
+        width: 1152
+        height: 648
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8bac407474857db4eb94f713d096da41
+      internalID: -1400434876
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tutgif2_200
+      rect:
+        serializedVersion: 2
+        x: 2304
+        y: 0
+        width: 1152
+        height: 648
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45d26318f49431a4d963d55551c094b3
+      internalID: -280111233
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tutgif2_201
+      rect:
+        serializedVersion: 2
+        x: 3456
+        y: 0
+        width: 1152
+        height: 648
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59336e58c4439e646a9fe96fdffd7ed3
+      internalID: 669874798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tutgif2_202
+      rect:
+        serializedVersion: 2
+        x: 4608
+        y: 0
+        width: 1152
+        height: 648
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76b7ddca6148c9f47a24a4e7c86a37f1
+      internalID: -1549091942
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tutgif2_203
+      rect:
+        serializedVersion: 2
+        x: 5760
+        y: 0
+        width: 1152
+        height: 648
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e6b28213ea8ff9448dd71bcd86224ec
+      internalID: 951187787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tutgif2_204
+      rect:
+        serializedVersion: 2
+        x: 6912
+        y: 0
+        width: 1152
+        height: 648
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 504ddf1f8a332b54e9e5fdf6f18e26ae
+      internalID: 896819280
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tutgif2_205
+      rect:
+        serializedVersion: 2
+        x: 8064
+        y: 0
+        width: 1152
+        height: 648
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b569531b974326c49b1e69295882454e
+      internalID: 412537518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tutgif2_206
+      rect:
+        serializedVersion: 2
+        x: 9216
+        y: 0
+        width: 1152
+        height: 648
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54da71e22aa71a945ab9c0974f310f35
+      internalID: 878968590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tutgif2_207
+      rect:
+        serializedVersion: 2
+        x: 10368
+        y: 0
+        width: 1152
+        height: 648
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80364cc5a4e35654ba75eb3733cf6e79
+      internalID: 2101723246
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tutgif2_208
+      rect:
+        serializedVersion: 2
+        x: 11520
+        y: 0
+        width: 1152
+        height: 648
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb9dcdbc59b106441a9d1c68058454db
+      internalID: -2015631548
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: ab387b74a9fe56b4e99b425afed8389a
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":1152.0,"y":648.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      tutgif2_0: 170764099
+      tutgif2_1: 1974489613
+      tutgif2_10: -278395742
+      tutgif2_100: -1829838817
+      tutgif2_101: -1987547067
+      tutgif2_102: -491324000
+      tutgif2_103: -1178635954
+      tutgif2_104: 903274064
+      tutgif2_105: 1962621965
+      tutgif2_106: -1567209612
+      tutgif2_107: -1895030583
+      tutgif2_108: -744339998
+      tutgif2_109: 872972232
+      tutgif2_11: 1759993207
+      tutgif2_110: -284797078
+      tutgif2_111: 1947337821
+      tutgif2_112: 1674910263
+      tutgif2_113: -1884734389
+      tutgif2_114: 793149922
+      tutgif2_115: -164085522
+      tutgif2_116: 907673420
+      tutgif2_117: 627306033
+      tutgif2_118: 830926521
+      tutgif2_119: -104787167
+      tutgif2_12: 838735121
+      tutgif2_120: 1680544126
+      tutgif2_121: 512548495
+      tutgif2_122: 1427965150
+      tutgif2_123: 1089783500
+      tutgif2_124: 1610429466
+      tutgif2_125: 1322574058
+      tutgif2_126: 1798772588
+      tutgif2_127: -1816519699
+      tutgif2_128: -51037931
+      tutgif2_129: 869040966
+      tutgif2_13: 181764937
+      tutgif2_130: 936120360
+      tutgif2_131: -473952799
+      tutgif2_132: -450944309
+      tutgif2_133: 2105708937
+      tutgif2_134: -496694350
+      tutgif2_135: -504467586
+      tutgif2_136: -1202930509
+      tutgif2_137: 156634850
+      tutgif2_138: -1353957120
+      tutgif2_139: -2030218438
+      tutgif2_14: -1793389988
+      tutgif2_140: -1045029086
+      tutgif2_141: -1806284929
+      tutgif2_142: 1797582021
+      tutgif2_143: -793561083
+      tutgif2_144: 1422119140
+      tutgif2_145: -1420501409
+      tutgif2_146: -1079426403
+      tutgif2_147: -63159355
+      tutgif2_148: 672004453
+      tutgif2_149: 124547257
+      tutgif2_15: -807922939
+      tutgif2_150: 104707583
+      tutgif2_151: 1614310848
+      tutgif2_152: 833895764
+      tutgif2_153: 474762725
+      tutgif2_154: 1749102735
+      tutgif2_155: -413059525
+      tutgif2_156: 1894956963
+      tutgif2_157: -799023907
+      tutgif2_158: 318413392
+      tutgif2_159: -158071043
+      tutgif2_16: -1568067827
+      tutgif2_160: 1902771829
+      tutgif2_161: -1213473622
+      tutgif2_162: 419783892
+      tutgif2_163: -70644779
+      tutgif2_164: 1347455526
+      tutgif2_165: 1612319059
+      tutgif2_166: 869583701
+      tutgif2_167: 800446744
+      tutgif2_168: 55505397
+      tutgif2_169: 1593100607
+      tutgif2_17: -2139096305
+      tutgif2_170: 1391213529
+      tutgif2_171: 491250227
+      tutgif2_172: -2115493313
+      tutgif2_173: 1023413972
+      tutgif2_174: 1523419325
+      tutgif2_175: -589140011
+      tutgif2_176: 1115335905
+      tutgif2_177: 2118628255
+      tutgif2_178: -925974989
+      tutgif2_179: -1607643694
+      tutgif2_18: -842450887
+      tutgif2_180: 827434018
+      tutgif2_181: -2145332001
+      tutgif2_182: -196163716
+      tutgif2_183: 1831052563
+      tutgif2_184: -1661356176
+      tutgif2_185: -835828715
+      tutgif2_186: -879455112
+      tutgif2_187: 1213319365
+      tutgif2_188: 1592181874
+      tutgif2_189: 999878423
+      tutgif2_19: 991289843
+      tutgif2_190: -60685018
+      tutgif2_191: -2133165197
+      tutgif2_192: -2116642179
+      tutgif2_193: 1407436859
+      tutgif2_194: -251530171
+      tutgif2_195: -687640121
+      tutgif2_196: 642628524
+      tutgif2_197: -1535167180
+      tutgif2_198: 1775089287
+      tutgif2_199: -1400434876
+      tutgif2_2: 1629466905
+      tutgif2_20: 333340317
+      tutgif2_200: -280111233
+      tutgif2_201: 669874798
+      tutgif2_202: -1549091942
+      tutgif2_203: 951187787
+      tutgif2_204: 896819280
+      tutgif2_205: 412537518
+      tutgif2_206: 878968590
+      tutgif2_207: 2101723246
+      tutgif2_208: -2015631548
+      tutgif2_21: 1827356686
+      tutgif2_22: -698563484
+      tutgif2_23: 1160130360
+      tutgif2_24: -1327046753
+      tutgif2_25: 761263167
+      tutgif2_26: -1154463367
+      tutgif2_27: 1653922271
+      tutgif2_28: 744262900
+      tutgif2_29: 179208228
+      tutgif2_3: -1391406927
+      tutgif2_30: 213837507
+      tutgif2_31: 580686565
+      tutgif2_32: 838046763
+      tutgif2_33: -807998289
+      tutgif2_34: 1577114603
+      tutgif2_35: 827442378
+      tutgif2_36: 210420758
+      tutgif2_37: -381167352
+      tutgif2_38: -551260631
+      tutgif2_39: 666972472
+      tutgif2_4: 1106079930
+      tutgif2_40: -1274811191
+      tutgif2_41: -600008210
+      tutgif2_42: 952315548
+      tutgif2_43: 674834729
+      tutgif2_44: -679365464
+      tutgif2_45: 1642742333
+      tutgif2_46: 1990204584
+      tutgif2_47: -2093341127
+      tutgif2_48: 1062616700
+      tutgif2_49: -63673465
+      tutgif2_5: 319524134
+      tutgif2_50: 915600594
+      tutgif2_51: 345730407
+      tutgif2_52: 1736993004
+      tutgif2_53: -1944193292
+      tutgif2_54: 1916646759
+      tutgif2_55: -487821250
+      tutgif2_56: 881928952
+      tutgif2_57: -1458162206
+      tutgif2_58: -173835794
+      tutgif2_59: 438055297
+      tutgif2_6: 681291590
+      tutgif2_60: 1350800590
+      tutgif2_61: 1559808203
+      tutgif2_62: 201769401
+      tutgif2_63: 248478371
+      tutgif2_64: -1756097566
+      tutgif2_65: 57331773
+      tutgif2_66: 488241371
+      tutgif2_67: -488814867
+      tutgif2_68: -1549113688
+      tutgif2_69: 1965034109
+      tutgif2_7: -1323498768
+      tutgif2_70: -1946096950
+      tutgif2_71: 1347954352
+      tutgif2_72: -2027153328
+      tutgif2_73: -222468024
+      tutgif2_74: -21277963
+      tutgif2_75: 1186976586
+      tutgif2_76: 746923667
+      tutgif2_77: 1026295613
+      tutgif2_78: 1395797288
+      tutgif2_79: 889939295
+      tutgif2_8: -297234599
+      tutgif2_80: -2127847007
+      tutgif2_81: -324946442
+      tutgif2_82: 467668077
+      tutgif2_83: 1576931980
+      tutgif2_84: -1099916748
+      tutgif2_85: -2120358662
+      tutgif2_86: -1806949291
+      tutgif2_87: -1141552737
+      tutgif2_88: 782884844
+      tutgif2_89: 55449259
+      tutgif2_9: 2138293586
+      tutgif2_90: 1439410916
+      tutgif2_91: -449466646
+      tutgif2_92: -1191264964
+      tutgif2_93: 1549944566
+      tutgif2_94: 403857661
+      tutgif2_95: -424104178
+      tutgif2_96: -196560672
+      tutgif2_97: 263646080
+      tutgif2_98: 1552381480
+      tutgif2_99: -157761322
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
@@ -9,6 +10,8 @@ public class Tile : MonoBehaviour
     public bool isFlagged = false;
 
     public GameObject mineTileFP;
+
+
 
     public void Reveal()
     {
@@ -75,8 +78,6 @@ public class Tile : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(1) && !isRevealed)
         {
-            if (EventSystem.current.IsPointerOverGameObject())
-                return;
 
             isFlagged = !isFlagged;
             GetComponent<Renderer>().material.color = isFlagged ? Color.yellow : Color.gray;
@@ -85,8 +86,6 @@ public class Tile : MonoBehaviour
 
     private void OnMouseDown()
     {
-        if (EventSystem.current.IsPointerOverGameObject())
-            return;
 
         if (!isRevealed && !isFlagged)  // left-click on flagged tiles shouldn't change it.
         {
