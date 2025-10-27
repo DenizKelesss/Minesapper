@@ -8,6 +8,9 @@ public class ComicIntro : MonoBehaviour
 
     public GameObject comicPanel;
     public GameObject comicPagesObject;
+
+    public GameObject tutorialPanel;
+
     public Image[] comicPages;
     public float[] pageDurations;
     public AudioClip[] voiceovers;
@@ -16,6 +19,7 @@ public class ComicIntro : MonoBehaviour
 
     private int currentPage = 0;
     private Coroutine autoAdvanceCoroutine;
+
 
     void Start()
     {
@@ -79,7 +83,15 @@ public class ComicIntro : MonoBehaviour
         audioSource.Stop();
         Destroy(comicPanel);
         Destroy(comicPagesObject);
-
+        ShowTutorialPanel();
         //leads to the scene, the same scene
+    }
+
+    void ShowTutorialPanel()
+    {
+        if (tutorialPanel != null)
+        {
+            tutorialPanel.SetActive(true);
+        }
     }
 }
