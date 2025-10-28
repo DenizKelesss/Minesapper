@@ -6,61 +6,66 @@ using UnityEngine.UI;
 public class TutorialManager : MonoBehaviour
 {
     [Header("UI References")]
-    public GameObject tutorialPanel;          // The main panel that holds the tutorial UI
-    public GameObject tutorialSlides;         // Parent object containing the slide images
-    public Image[] tutorialClips;             // Array of tutorial images or steps
-    public float[] clipDurations;             // Duration each tutorial clip stays before auto-advancing
-    public Button nextTutClipButton;          // Button to manually skip to the next tutorial clip
-    public Button prevTutClipButton;          // Button to go back to the previous tutorial clip
-
-    private int currentClip = 0;              // Index of the current clip
-    private Coroutine autoAdvanceClipsCoroutine;
-    private bool tutorialCompleted = false;   // Prevent multiple calls to EndTutorial()
+    public GameObject tutorialPanel;
+    public GameObject tutorialSlides;
+    public Image[] tutorialClips;
+    public float[] clipDurations;
+    public Button nextTutClipButton;
+    public Button prevTutClipButton;
 
     [Header("Clean House")]
     public GameObject blockToDelete;
 
+    private int currentClip = 0;
+    private Coroutine autoAdvanceClipsCoroutine;
+    private bool tutorialCompleted = false;
+
+    // 🔸 Static flag to remember across restarts
+    public static bool tutorialAlreadyCompleted = false;
 
     void Start()
     {
+        // If tutorial already done (e.g., after restart), clean up immediately
+        if (tutorialAlreadyCompleted)
+        {
+            if (blockToDelete) Destroy(blockToDelete);
+            if (tutorialPanel) Destroy(tutorialPanel);
+            if (tutorialSlides) Destroy(tutorialSlides);
+            Destroy(this);
+            return;
+        }
+
         if (tutorialPanel)
         {
             nextTutClipButton.onClick.AddListener(SkipToNextClip);
             prevTutClipButton.onClick.AddListener(SkipToPreviousClip);
-
             ShowClip(currentClip);
         }
     }
 
     void ShowClip(int clipIndex)
     {
-        // If we’ve gone past the final clip, end tutorial
         if (clipIndex >= tutorialClips.Length)
         {
             EndTutorial();
             return;
         }
 
-        // Show only the current clip
         for (int i = 0; i < tutorialClips.Length; i++)
             tutorialClips[i].gameObject.SetActive(i == clipIndex);
 
-        // Enable/disable buttons
         prevTutClipButton.interactable = (clipIndex > 0);
 
-        // Keep the Next button active on the final slide, but rename it "Finish"
         if (clipIndex < tutorialClips.Length - 1)
         {
             nextTutClipButton.interactable = true;
-            /*nextTutClipButton.GetComponentInChildren<Text>().text = "SKIP";*/
         }
         else
         {
-            nextTutClipButton.interactable = true; // Still clickable!
+            nextTutClipButton.interactable = true;
             nextTutClipButton.GetComponentInChildren<TextMeshProUGUI>().text = "Finish";
         }
 
-        // Stop and restart the auto-advance
         if (autoAdvanceClipsCoroutine != null)
             StopCoroutine(autoAdvanceClipsCoroutine);
 
@@ -92,14 +97,11 @@ public class TutorialManager : MonoBehaviour
     void GoToNextClip()
     {
         currentClip++;
-
-        // If we're at the last clip, this ends the tutorial
         if (currentClip >= tutorialClips.Length)
         {
             EndTutorial();
             return;
         }
-
         ShowClip(currentClip);
     }
 
@@ -110,21 +112,20 @@ public class TutorialManager : MonoBehaviour
         ShowClip(currentClip);
     }
 
-    void EndTutorial()
+    public void EndTutorial()
     {
         if (tutorialCompleted) return;
         tutorialCompleted = true;
 
-        Destroy(blockToDelete);
+        tutorialAlreadyCompleted = true; // Remember this for future reloads
+
+        if (blockToDelete) Destroy(blockToDelete);
 
         if (autoAdvanceClipsCoroutine != null)
             StopCoroutine(autoAdvanceClipsCoroutine);
 
-        if (tutorialPanel != null)
-            Destroy(tutorialPanel);
-
-        if (tutorialSlides != null)
-            Destroy(tutorialSlides);
+        if (tutorialPanel) Destroy(tutorialPanel);
+        if (tutorialSlides) Destroy(tutorialSlides);
 
         Debug.Log("Tutorial Completed!");
     }

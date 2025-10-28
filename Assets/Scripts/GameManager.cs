@@ -24,6 +24,8 @@ public class GameManager : MonoBehaviour
 
     public float mineHeight = 0.10f;
 
+    public GameObject level1Block;
+
     [SerializeField]
     bool canFail = false;
 
@@ -41,6 +43,12 @@ public class GameManager : MonoBehaviour
         Debug.Log("Boom! Game Over.");
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         //invoke restart method
+
+        if (level1Block != null)
+        {
+            level1Block.SetActive(false);
+        }
+
     }
 
     public void GenerateField()

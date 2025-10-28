@@ -342,6 +342,7 @@ MonoBehaviour:
   mineCount: 4
   spawnedMineFPCount: 0
   mineHeight: 0.1
+  level1Block: {fileID: 1634642053}
   canFail: 1
 --- !u!4 &23334853
 Transform:
@@ -13713,6 +13714,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d2def5e2a761c9d4486010a138c837ab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  blockLevel1: {fileID: 1634642053}
 --- !u!4 &1829245605
 Transform:
   m_ObjectHideFlags: 0
@@ -16230,7 +16232,7 @@ MonoBehaviour:
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 1920, y: 1080}
   m_ScreenMatchMode: 0
-  m_MatchWidthOrHeight: 0
+  m_MatchWidthOrHeight: 0.5
   m_PhysicalUnit: 3
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
